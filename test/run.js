@@ -140,9 +140,29 @@ for (const rule of darkRules) {
 for (const rule of lightRules) {
     assert(contrastRatio(rule.settings.foreground, '#FFFFFF') >= 4.5, `Light palette contrast is too low for ${rule.scope}`);
 }
-const darkInfoRule = darkRules.find(rule => rule.scope === 'keyword.other.info.darkest');
-assert.equal(darkInfoRule.settings.foreground, '#86A8C6');
-assert.notEqual(darkInfoRule.settings.foreground, '#244BA5');
-assert.equal(tokenCustomizations.textMateRules[0].settings.foreground, undefined);
+
+const globalRules = tokenCustomizations.textMateRules;
+const globalInfoRule = globalRules.find(rule => rule.scope === 'keyword.other.info.darkest');
+assert.equal(globalInfoRule.settings.foreground, '#86A8C6');
+assert.notEqual(globalInfoRule.settings.foreground, '#244BA5');
+
+const gameEffectColors = {
+    'keyword.other.bleed.darkest': '#B10000',
+    'keyword.other.poison.darkest': '#BDC241',
+    'keyword.other.heal.darkest': '#87C241',
+    'keyword.other.stun.darkest': '#C99C45',
+    'keyword.other.kill.darkest': '#FF0000',
+    'keyword.other.riposte.darkest': '#C3630F',
+    'keyword.other.buff.darkest': '#5EC9D6',
+    'keyword.other.summon.darkest': '#7FFFD4'
+};
+for (const [scope, color] of Object.entries(gameEffectColors)) {
+    const rule = globalRules.find(candidate => candidate.scope === scope);
+    assert(rule, `Missing global Effect color rule for ${scope}`);
+    assert.equal(rule.settings.foreground, color);
+    assert(!darkRules.some(candidate => candidate.scope === scope), `Dark theme overrides game color for ${scope}`);
+    assert(!lightRules.some(candidate => candidate.scope === scope), `Light theme overrides game color for ${scope}`);
+}
+assert.equal(globalRules[0].settings.foreground, undefined);
 
 console.log('All tests passed.');

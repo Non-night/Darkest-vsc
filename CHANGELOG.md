@@ -2,6 +2,14 @@
 
 All notable changes to this extension will be documented in this file.
 
+## [3.1.3] - 2026-08-14
+
+### Changed
+
+- Forced Info-like dot keywords to use a stable soft blue instead of inheriting bright red keyword colors from unmatched themes.
+- Restored the original game-inspired colors for Effect-specific bleed, poison, heal, stun, kill, riposte, and Buff keywords.
+- Restored the previous summon keyword color.
+
 ## [3.1.2] - 2026-08-14
 
 ### Changed

@@ -20,9 +20,9 @@
 
 - 为五类 `.darkest` 文件提供独立 TextMate 语法。
 - 区分 Header、关键字、参数、数字、字符串和注释。
-- Effect 文件为流血、中毒、治疗、眩晕、处决、反击、Buff 和召唤等关键字提供专项颜色。
+- Effect 文件为流血、中毒、治疗、眩晕、处决、反击、Buff 和召唤等关键字提供与游戏表现一致的固定专项颜色。
 - Info-like 文件识别当前 Header 下的动态 `_effects` 关键字；无法匹配的动态关键字会使用当前主题的警告色标记。
-- 默认深色与浅色主题分别使用低饱和、高对比度配色；其他主题沿用主题自身的 TextMate 配色，避免固定颜色破坏可读性。
+- Info-like 点号关键字固定使用柔和蓝色，避免被部分主题回退为刺眼红色；普通 Token 在默认深色与浅色主题中使用低饱和、高对比度配色。
 
 ### 智能补全
 
@@ -83,7 +83,7 @@
 也可以使用命令行：
 
 ```powershell
-code --install-extension darkest-dungeon-3.1.2.vsix
+code --install-extension darkest-dungeon-3.1.3.vsix
 ```
 
 ### 从源代码测试
