@@ -1,8 +1,13 @@
 {
   "name": "darkest-dungeon",
-  "displayName": "Darkest Dungeon",
-  "description": "Darkest Dungeon .darkest 文件的着色、补全、诊断、注释和颜色预览支持。",
+  "displayName": "Darkest Dungeon Modding Support",
+  "description": "Language support for Darkest Dungeon .darkest mod files: syntax highlighting, completion, diagnostics, comments, and RGBA color previews.",
   "version": "3.1.1",
+  "publisher": "Nonight",
+  "author": {
+    "name": "Non-night",
+    "url": "https://github.com/Non-night"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,7 +17,22 @@
   "bugs": {
     "url": "https://github.com/Non-night/Darkest-vsc/issues"
   },
-  "publisher": "No_night",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#171419",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "keywords": [
+    "darkest-dungeon",
+    "darkest",
+    "modding",
+    "darkest-file",
+    "syntax-highlighting",
+    "autocomplete",
+    "diagnostics",
+    "linting"
+  ],
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -30,6 +50,14 @@
     "onCommand:darkestDungeon.toggleLineComment",
     "onCommand:darkestDungeon.refreshDiagnostics"
   ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": true
+    }
+  },
   "contributes": {
     "languages": [
       {

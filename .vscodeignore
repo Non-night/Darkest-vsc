@@ -1,6 +1,13 @@
+.git/**
+.github/**
+.gitignore
+.gitattributes
+.npmignore
 .port-tools/**
 .npm-cache/**
 .pack-cache/**
+.vscode-test/**
 test/**
 For_the_Darkest_Dungeon_功能说明.md
 *.tgz
+*.vsix
