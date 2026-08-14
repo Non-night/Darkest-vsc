@@ -78,7 +78,9 @@ function findInvalidDynamicEffectRanges(document) {
 }
 
 function registerInfoKeywordDecorations(vscode, context) {
-    const invalidDecoration = vscode.window.createTextEditorDecorationType({ color: '#FFFF00' });
+    const invalidDecoration = vscode.window.createTextEditorDecorationType({
+        color: new vscode.ThemeColor('editorWarning.foreground')
+    });
     context.subscriptions.push(invalidDecoration);
 
     const updateEditor = editor => {

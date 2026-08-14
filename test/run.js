@@ -114,4 +114,35 @@ assert.equal(foundRgba.value, '10 20 30 128');
 assert.equal(foundRgba.range.start.character, 23);
 assert.equal(findRgbaOnLine(vscode, 'colour: .rgba 10 20 30 128 .rgba #FFF', 0), null);
 
+
+const manifest = require('../package.json');
+const tokenCustomizations = manifest.contributes.configurationDefaults['editor.tokenColorCustomizations'];
+const darkThemeKey = '[Default Dark Modern][Dark Modern][Dark+ (default dark)][Visual Studio Dark]';
+const lightThemeKey = '[Default Light Modern][Light Modern][Light+ (default light)][Visual Studio Light][Quiet Light]';
+const darkRules = tokenCustomizations[darkThemeKey].textMateRules;
+const lightRules = tokenCustomizations[lightThemeKey].textMateRules;
+
+function relativeLuminance(hex) {
+    const channels = [1, 3, 5].map(index => Number.parseInt(hex.slice(index, index + 2), 16) / 255);
+    const linear = channels.map(value => value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4);
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+}
+
+function contrastRatio(foreground, background) {
+    const first = relativeLuminance(foreground);
+    const second = relativeLuminance(background);
+    return (Math.max(first, second) + 0.05) / (Math.min(first, second) + 0.05);
+}
+
+for (const rule of darkRules) {
+    assert(contrastRatio(rule.settings.foreground, '#1E1E1E') >= 4.5, `Dark palette contrast is too low for ${rule.scope}`);
+}
+for (const rule of lightRules) {
+    assert(contrastRatio(rule.settings.foreground, '#FFFFFF') >= 4.5, `Light palette contrast is too low for ${rule.scope}`);
+}
+const darkInfoRule = darkRules.find(rule => rule.scope === 'keyword.other.info.darkest');
+assert.equal(darkInfoRule.settings.foreground, '#86A8C6');
+assert.notEqual(darkInfoRule.settings.foreground, '#244BA5');
+assert.equal(tokenCustomizations.textMateRules[0].settings.foreground, undefined);
+
 console.log('All tests passed.');

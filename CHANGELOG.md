@@ -2,6 +2,14 @@
 
 All notable changes to this extension will be documented in this file.
 
+## [3.1.2] - 2026-08-14
+
+### Changed
+
+- Reworked syntax colors after reviewing 1,193 supported files from an installed game directory.
+- Added separate low-saturation palettes for common dark and light VS Code themes.
+- Changed invalid dynamic `_effects` decorations to use the active theme's warning color.
+
 ## [3.1.1] - 2026-08-14
 
 ### Added

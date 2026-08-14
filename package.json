@@ -2,7 +2,7 @@
   "name": "darkest-dungeon",
   "displayName": "Darkest Dungeon Modding Support",
   "description": "Language support for Darkest Dungeon .darkest mod files: syntax highlighting, completion, diagnostics, comments, and RGBA color previews.",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "publisher": "Nonight",
   "author": {
     "name": "Non-night",
@@ -185,105 +185,211 @@
       "editor.tokenColorCustomizations": {
         "textMateRules": [
           {
-            "scope": "keyword.control.header.darkest",
+            "scope": [
+              "keyword.control.header.darkest",
+              "keyword.control.header.info.darkest"
+            ],
             "settings": {
-              "foreground": "#4682B4",
               "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": "keyword.control.core.darkest",
-            "settings": {
-              "foreground": "#FFC0CB",
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": "variable.parameter.prop.darkest",
-            "settings": {
-              "foreground": "#B8B6AC"
-            }
-          },
-          {
-            "scope": "keyword.other.bleed.darkest",
-            "settings": {
-              "foreground": "#B10000"
-            }
-          },
-          {
-            "scope": "keyword.other.poison.darkest",
-            "settings": {
-              "foreground": "#BDC241"
-            }
-          },
-          {
-            "scope": "keyword.other.heal.darkest",
-            "settings": {
-              "foreground": "#87C241"
-            }
-          },
-          {
-            "scope": "keyword.other.stun.darkest",
-            "settings": {
-              "foreground": "#C99C45"
-            }
-          },
-          {
-            "scope": "keyword.other.kill.darkest",
-            "settings": {
-              "foreground": "#FF0000"
-            }
-          },
-          {
-            "scope": "keyword.other.riposte.darkest",
-            "settings": {
-              "foreground": "#C3630F"
-            }
-          },
-          {
-            "scope": "keyword.other.buff.darkest",
-            "settings": {
-              "foreground": "#5EC9D6"
-            }
-          },
-          {
-            "scope": "keyword.other.summon.darkest",
-            "settings": {
-              "foreground": "#7FFFD4"
-            }
-          },
-          {
-            "scope": "constant.numeric.darkest",
-            "settings": {
-              "foreground": "#FF8C00"
-            }
-          },
-          {
-            "scope": "entity.name.tag.unquoted.darkest",
-            "settings": {
-              "foreground": "#87CEFA"
-            }
-          },
-          {
-            "scope": "keyword.control.header.info.darkest",
-            "settings": {
-              "foreground": "#4682B4",
-              "fontStyle": "bold"
-            }
-          },
-          {
-            "scope": "keyword.other.info.darkest",
-            "settings": {
-              "foreground": "#244BA5"
-            }
-          },
-          {
-            "scope": "invalid.illegal.darkest",
-            "settings": {
-              "foreground": "#FFFF00"
             }
           }
-        ]
+        ],
+        "[Default Dark Modern][Dark Modern][Dark+ (default dark)][Visual Studio Dark]": {
+          "textMateRules": [
+            {
+              "scope": [
+                "keyword.control.header.darkest",
+                "keyword.control.header.info.darkest"
+              ],
+              "settings": {
+                "foreground": "#C7A86B",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "keyword.control.core.darkest",
+              "settings": {
+                "foreground": "#A99CC4"
+              }
+            },
+            {
+              "scope": "variable.parameter.prop.darkest",
+              "settings": {
+                "foreground": "#9EA7B3"
+              }
+            },
+            {
+              "scope": "keyword.other.bleed.darkest",
+              "settings": {
+                "foreground": "#C87979"
+              }
+            },
+            {
+              "scope": "keyword.other.poison.darkest",
+              "settings": {
+                "foreground": "#A6AE72"
+              }
+            },
+            {
+              "scope": "keyword.other.heal.darkest",
+              "settings": {
+                "foreground": "#83AC83"
+              }
+            },
+            {
+              "scope": "keyword.other.stun.darkest",
+              "settings": {
+                "foreground": "#C5A268"
+              }
+            },
+            {
+              "scope": "keyword.other.kill.darkest",
+              "settings": {
+                "foreground": "#D26B6B"
+              }
+            },
+            {
+              "scope": "keyword.other.riposte.darkest",
+              "settings": {
+                "foreground": "#B88A6A"
+              }
+            },
+            {
+              "scope": "keyword.other.buff.darkest",
+              "settings": {
+                "foreground": "#79A9AE"
+              }
+            },
+            {
+              "scope": "keyword.other.summon.darkest",
+              "settings": {
+                "foreground": "#7FA99B"
+              }
+            },
+            {
+              "scope": "constant.numeric.darkest",
+              "settings": {
+                "foreground": "#C9A26D"
+              }
+            },
+            {
+              "scope": "entity.name.tag.unquoted.darkest",
+              "settings": {
+                "foreground": "#B6BCC8"
+              }
+            },
+            {
+              "scope": "keyword.other.info.darkest",
+              "settings": {
+                "foreground": "#86A8C6"
+              }
+            },
+            {
+              "scope": "invalid.illegal.darkest",
+              "settings": {
+                "foreground": "#D6B56C"
+              }
+            }
+          ]
+        },
+        "[Default Light Modern][Light Modern][Light+ (default light)][Visual Studio Light][Quiet Light]": {
+          "textMateRules": [
+            {
+              "scope": [
+                "keyword.control.header.darkest",
+                "keyword.control.header.info.darkest"
+              ],
+              "settings": {
+                "foreground": "#7A5F22",
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "keyword.control.core.darkest",
+              "settings": {
+                "foreground": "#694B7C"
+              }
+            },
+            {
+              "scope": "variable.parameter.prop.darkest",
+              "settings": {
+                "foreground": "#4F5B66"
+              }
+            },
+            {
+              "scope": "keyword.other.bleed.darkest",
+              "settings": {
+                "foreground": "#9B3A3A"
+              }
+            },
+            {
+              "scope": "keyword.other.poison.darkest",
+              "settings": {
+                "foreground": "#66711F"
+              }
+            },
+            {
+              "scope": "keyword.other.heal.darkest",
+              "settings": {
+                "foreground": "#35733E"
+              }
+            },
+            {
+              "scope": "keyword.other.stun.darkest",
+              "settings": {
+                "foreground": "#805F1F"
+              }
+            },
+            {
+              "scope": "keyword.other.kill.darkest",
+              "settings": {
+                "foreground": "#A82626"
+              }
+            },
+            {
+              "scope": "keyword.other.riposte.darkest",
+              "settings": {
+                "foreground": "#7B4F30"
+              }
+            },
+            {
+              "scope": "keyword.other.buff.darkest",
+              "settings": {
+                "foreground": "#2E6F73"
+              }
+            },
+            {
+              "scope": "keyword.other.summon.darkest",
+              "settings": {
+                "foreground": "#326D5F"
+              }
+            },
+            {
+              "scope": "constant.numeric.darkest",
+              "settings": {
+                "foreground": "#815B21"
+              }
+            },
+            {
+              "scope": "entity.name.tag.unquoted.darkest",
+              "settings": {
+                "foreground": "#455B6D"
+              }
+            },
+            {
+              "scope": "keyword.other.info.darkest",
+              "settings": {
+                "foreground": "#315F85"
+              }
+            },
+            {
+              "scope": "invalid.illegal.darkest",
+              "settings": {
+                "foreground": "#8A6A1E"
+              }
+            }
+          ]
+        }
       }
     }
   },
