@@ -1,0 +1,4490 @@
+{
+  "effect": {
+    "coreKeywords": [
+      ".name",
+      ".target",
+      ".on_hit",
+      ".on_miss"
+    ],
+    "riposteKeywords": [
+      ".riposte",
+      ".riposte_on_miss_chance_add",
+      ".riposte_on_hit_chance_add",
+      ".riposte_on_miss_chance_multiply",
+      ".riposte_on_hit_chance_multiply",
+      ".riposte_effect"
+    ],
+    "buffKeywords": [
+      ".combat_stat_buff",
+      ".buff_ids",
+      ".buff_amount",
+      ".buff_type",
+      ".buff_sub_type",
+      ".buff_duration_type",
+      ".buff_source_type",
+      ".buff_is_clear_debuff_valid",
+      ".damage_low_multiply",
+      ".damage_low_add",
+      ".damage_high_multiply",
+      ".damage_high_add",
+      ".max_hp_multiply",
+      ".max_hp_add",
+      ".attack_rating_add",
+      ".attack_rating_multiply",
+      ".crit_chance_add",
+      ".crit_chance_multiply",
+      ".defense_rating_add",
+      ".defense_rating_multiply",
+      ".protection_rating_add",
+      ".protection_rating_multiply",
+      ".speed_rating_add",
+      ".speed_rating_multiply",
+      ".guard"
+    ],
+    "summonKeywords": [
+      ".summon_monsters",
+      ".summon_chances",
+      ".summon_ranks",
+      ".summon_limits",
+      ".summon_count",
+      ".summon_erase_data_on_roll",
+      ".summon_can_spawn_loot",
+      ".summon_rank_is_previous_monster_class",
+      ".summon_does_roll_initiatives"
+    ],
+    "allKeywords": [
+      ".name",
+      ".target",
+      ".curio_result_type",
+      ".chance",
+      ".on_hit",
+      ".on_miss",
+      ".queue",
+      ".dotBleed",
+      ".dotPoison",
+      ".dotStress",
+      ".dotHpHeal",
+      ".healstress",
+      ".stress",
+      ".combat_stat_buff",
+      ".damage_low_multiply",
+      ".damage_low_add",
+      ".damage_high_multiply",
+      ".damage_high_add",
+      ".max_hp_multiply",
+      ".max_hp_add",
+      ".attack_rating_add",
+      ".attack_rating_multiply",
+      ".crit_chance_add",
+      ".crit_chance_multiply",
+      ".defense_rating_add",
+      ".defense_rating_multiply",
+      ".protection_rating_add",
+      ".protection_rating_multiply",
+      ".speed_rating_add",
+      ".speed_rating_multiply",
+      ".buff_ids",
+      ".duration",
+      ".heal",
+      ".heal_percent",
+      ".can_crit_heal",
+      ".cure",
+      ".cure_bleed",
+      ".cure_poison",
+      ".clearDotStress",
+      ".tag",
+      ".untag",
+      ".stun",
+      ".unstun",
+      ".keyStatus",
+      ".riposte",
+      ".riposte_on_miss_chance_add",
+      ".riposte_on_hit_chance_add",
+      ".riposte_on_miss_chance_multiply",
+      ".riposte_on_hit_chance_multiply",
+      ".riposte_effect",
+      ".clear_riposte",
+      ".guard",
+      ".clearguarding",
+      ".clearguarded",
+      ".torch_decrease",
+      ".torch_increase",
+      ".item",
+      ".curio",
+      ".dotShuffle",
+      ".push",
+      ".pull",
+      ".shuffletarget",
+      ".shuffleparty",
+      ".instant_shuffle",
+      ".buff_amount",
+      ".buff_type",
+      ".buff_sub_type",
+      ".buff_duration_type",
+      ".steal_buff_stat_type",
+      ".steal_buff_source_type",
+      ".swap_source_and_target",
+      ".kill",
+      ".immobilize",
+      ".unimmobilize",
+      ".control",
+      ".uncontrol",
+      ".kill_enemy_types",
+      ".monsterType",
+      ".capture",
+      ".capture_remove_from_party",
+      ".disease",
+      ".remove_vampire",
+      ".summon_monsters",
+      ".summon_chances",
+      ".summon_ranks",
+      ".summon_limits",
+      ".summon_count",
+      ".summon_erase_data_on_roll",
+      ".summon_can_spawn_loot",
+      ".summon_rank_is_previous_monster_class",
+      ".summon_does_roll_initiatives",
+      ".crit_doesnt_apply_to_roll",
+      ".virtue_blockable_chance",
+      ".affliction_blockable_chance",
+      ".set_mode",
+      ".can_apply_on_death",
+      ".apply_once",
+      ".rank_target",
+      ".clear_rank_target",
+      ".performer_rank_target",
+      ".apply_with_result",
+      ".initiative_change",
+      ".source_heal_type",
+      ".skill_instant",
+      ".actor_dot",
+      ".health_damage",
+      ".bark",
+      ".set_monster_class_id",
+      ".set_monster_class_ids",
+      ".set_monster_class_chances",
+      ".set_monster_class_reset_hp",
+      ".set_monster_class_reset_buffs",
+      ".set_monster_class_carry_over_hp_min_percent",
+      ".set_monster_class_clear_initative",
+      ".set_monster_class_clear_monster_brain_cooldowns",
+      ".set_monster_class_reset_scale",
+      ".has_description",
+      ".stealth",
+      ".unstealth",
+      ".clear_debuff",
+      ".health_damage_blocks",
+      ".dotSource",
+      ".buff_source_type",
+      ".use_item_id",
+      ".use_item_type",
+      ".skips_endless_wave_curio",
+      ".spawn_target_actor_base_class_id",
+      ".clearvirtue",
+      ".riposte_validate",
+      ".buff_is_clear_debuff_valid",
+      ".refreshes_skill_uses",
+      ".cure_disease",
+      ".individual_target_actor_rolls",
+      ".damage_type",
+      ".damage_source_type",
+      ".damage_source_data",
+      ".daze",
+      ".undaze"
+    ],
+    "targetValues": [
+      "performer",
+      "performer_group",
+      "performer_group_other",
+      "target",
+      "target_group",
+      "target_group_other",
+      "target_enemy_group",
+      "global"
+    ],
+    "curioResultValues": [
+      "positive",
+      "negative",
+      "neutral",
+      "none"
+    ],
+    "keyStatusValues": [
+      "tagged",
+      "poisoned",
+      "bleeding",
+      "stunned",
+      "dazed"
+    ],
+    "buffTypeValues": [
+      "hp_heal_amount",
+      "hp_heal_percent",
+      "hp_heal_received_percent",
+      "combat_stat_multiply",
+      "combat_stat_add",
+      "resistance",
+      "poison_chance",
+      "bleed_chance",
+      "stress_dmg_percent",
+      "stress_dmg_received_percent",
+      "stress_heal_percent",
+      "stress_heal_received_percent",
+      "party_surprise_chance",
+      "monsters_surprise_chance",
+      "ambush_chance",
+      "scouting_chance",
+      "starving_damage_percent",
+      "upgrade_discount",
+      "damage_received_percent",
+      "debuff_chance",
+      "resolve_check_percent",
+      "stun_chance",
+      "move_chance",
+      "remove_negative_quirk_chance",
+      "food_consumption_percent",
+      "resolve_xp_bonus_percent",
+      "activity_side_effect_chance",
+      "vampire_evolution_duration",
+      "quirk_evolution_death_immune",
+      "disable_combat_skill_attribute",
+      "guard_blocked",
+      "tag_blocked",
+      "ignore_protection",
+      "ignore_stealth",
+      "crit_received_chance",
+      "riposte",
+      "tag",
+      "guarded",
+      "vampire",
+      "stealth",
+      "hp_dot_bleed",
+      "hp_dot_poison",
+      "hp_dot_heal",
+      "stress_dot",
+      "shuffle_dot",
+      "torch_increase_percent",
+      "torch_decrease_percent",
+      "torchlight_burn_percent",
+      "stress_on_miss",
+      "stress_from_idle_in_town",
+      "shard_reward_percent",
+      "shard_consume_percent",
+      "damage_reflect_percent",
+      "hp_dot_bleed_duration_received_percent",
+      "hp_dot_bleed_duration_percent",
+      "hp_dot_bleed_amount_received_percent",
+      "hp_dot_bleed_amount_percent",
+      "hp_dot_poison_duration_received_percent",
+      "hp_dot_poison_duration_percent",
+      "hp_dot_poison_amount_received_percent",
+      "hp_dot_poison_amount_percent",
+      "stress_dot_duration_received_percent",
+      "stress_dot_duration_percent",
+      "stress_dot_amount_received_percent",
+      "stress_dot_amount_percent",
+      "hp_heal_dot_duration_received_percent",
+      "hp_heal_dot_duration_percent",
+      "hp_heal_dot_amount_received_percent",
+      "hp_heal_dot_amount_percent",
+      "shuffle_dot_duration_received_percent",
+      "shuffle_dot_duration_percent",
+      "guard_duration_received_percent",
+      "guard_duration_percent",
+      "cure_bleed_received_chance",
+      "cure_poison_received_chance",
+      "cure_bleed_chance",
+      "cure_poison_chance",
+      "random_target_friendly_chance",
+      "random_target_attack_chance",
+      "transfer_debuff_from_attacker_chance",
+      "transfer_buff_from_attacker_chance",
+      "quirk_tag_evolution_duration",
+      "deathblow_chance",
+      "heartattack_stress_heal_percent",
+      "ignore_guard",
+      "buff_duration_percent",
+      "riposte_duration_percent"
+    ],
+    "buffSubTypeValues": [
+      "max_hp",
+      "damage_low",
+      "damage_high",
+      "attack_rating",
+      "crit_chance",
+      "defense_rating",
+      "protection_rating",
+      "speed_rating",
+      "riposte_on_hit_chance",
+      "riposte_on_miss_chance",
+      "stun",
+      "move",
+      "poison",
+      "bleed",
+      "disease",
+      "debuff",
+      "death_blow",
+      "trap",
+      "armour",
+      "weapon",
+      "combat_skill",
+      "camping_skill",
+      "add_currency",
+      "remove_currency",
+      "add_trinket",
+      "remove_trinket",
+      "activity_lock",
+      "apply_buff",
+      "go_missing",
+      "heal",
+      "buff",
+      "tag",
+      "stress",
+      "guard",
+      "daze",
+      "hero_skill",
+      "hero_skill_multi_target",
+      "monster_skill",
+      "monster_skill_multi_target",
+      "camp_skill",
+      "camp_skill_multi_target",
+      "companion",
+      "eat",
+      "act_out",
+      "damage_heal",
+      "effect",
+      "flashback",
+      "dot",
+      "hunger",
+      "hero_crit",
+      "hero_killing_blow",
+      "mode",
+      "control",
+      "unkown",
+      "town_idle",
+      "quest_fail",
+      "pass",
+      "camping_relieve_stress",
+      "camping_eat",
+      "tile",
+      "retreat",
+      "capture",
+      "monster_crit"
+    ],
+    "buffDurationTypeValues": [
+      "round",
+      "combat_end",
+      "quest_end",
+      "quest_complete",
+      "quest_not_complete",
+      "activity_end",
+      "idle_start_town_visit",
+      "till_removed",
+      "none",
+      "before_turn",
+      "after_turn",
+      "after_round"
+    ],
+    "buffSourceValues": [
+      "bsrc_skill",
+      "bsrc_notspecified",
+      "bsrc_affliction",
+      "bsrc_virtue",
+      "bsrc_item",
+      "bsrc_curio",
+      "bsrc_disease",
+      "bsrc_riposte",
+      "bsrc_campingskill",
+      "bsrc_quirk",
+      "bsrc_trinket",
+      "bsrc_trinket_set",
+      "bsrc_instantSkill",
+      "bsrc_guard",
+      "bsrc_deathsdoor",
+      "bsrc_deathsdoor_recovery",
+      "bsrc_deathsdoor_recovery_heart_attack",
+      "bsrc_quest_failure",
+      "bsrc_companion",
+      "bsrc_stun",
+      "bsrc_town",
+      "bsrc_district",
+      "bsrc_torchsettings",
+      "bsrc_crit",
+      "bsrc_trinket_additional_effect",
+      "bsrc_battle_modifier",
+      "bsrc_never_again",
+      "bsrc_vampire",
+      "bsrc_town_event",
+      "bsrc_flashback_start",
+      "bsrc_flashback_result",
+      "bsrc_completed_darkest_dungeon_quest_party_hero",
+      "bsrc_quest_modifier",
+      "bsrc_last_hero",
+      "combat_end"
+    ],
+    "healSourceValues": [
+      "hero_skill",
+      "hero_skill_multi_target",
+      "monster_skill",
+      "monster_skill_multi_target",
+      "camp_skill",
+      "camp_skill_multi_target",
+      "companion",
+      "eat",
+      "act_out",
+      "damage_heal",
+      "effect",
+      "flashback",
+      "dot",
+      "curio"
+    ],
+    "damageTypeValues": [
+      "unknown",
+      "trap",
+      "obstacle",
+      "hunger",
+      "attack",
+      "bleed",
+      "healing",
+      "poisoned",
+      "captor",
+      "ddexit",
+      "townexit",
+      "death",
+      "heartattack",
+      "theblood",
+      "effect",
+      "quirkevolutiondeath",
+      "reflect",
+      "riposte",
+      "additionaleffect",
+      "supply",
+      "quest_item",
+      "trinket",
+      "estate_currency",
+      "journal_page",
+      "torch",
+      "shovel"
+    ],
+    "damageSourceValues": [
+      "unknown",
+      "hunger",
+      "trap",
+      "obstacle",
+      "friendly",
+      "monster",
+      "hero",
+      "friendly_quirk_actout",
+      "friendly_trait_actout",
+      "item",
+      "effect",
+      "quirk",
+      "reflect",
+      "trinket",
+      "estate"
+    ],
+    "numBoolValues": [
+      "0",
+      "1"
+    ],
+    "strBoolValues": [
+      "false",
+      "true"
+    ],
+    "strBoolValuesForError": [
+      "false",
+      "true",
+      "False",
+      "True",
+      "FALSE",
+      "TRUE"
+    ],
+    "keywordToValuesMap": {
+      ".target": [
+        "performer",
+        "performer_group",
+        "performer_group_other",
+        "target",
+        "target_group",
+        "target_group_other",
+        "target_enemy_group",
+        "global"
+      ],
+      ".curio_result_type": [
+        "positive",
+        "negative",
+        "neutral",
+        "none"
+      ],
+      ".keyStatus": [
+        "tagged",
+        "poisoned",
+        "bleeding",
+        "stunned",
+        "dazed"
+      ],
+      ".buff_type": [
+        "hp_heal_amount",
+        "hp_heal_percent",
+        "hp_heal_received_percent",
+        "combat_stat_multiply",
+        "combat_stat_add",
+        "resistance",
+        "poison_chance",
+        "bleed_chance",
+        "stress_dmg_percent",
+        "stress_dmg_received_percent",
+        "stress_heal_percent",
+        "stress_heal_received_percent",
+        "party_surprise_chance",
+        "monsters_surprise_chance",
+        "ambush_chance",
+        "scouting_chance",
+        "starving_damage_percent",
+        "upgrade_discount",
+        "damage_received_percent",
+        "debuff_chance",
+        "resolve_check_percent",
+        "stun_chance",
+        "move_chance",
+        "remove_negative_quirk_chance",
+        "food_consumption_percent",
+        "resolve_xp_bonus_percent",
+        "activity_side_effect_chance",
+        "vampire_evolution_duration",
+        "quirk_evolution_death_immune",
+        "disable_combat_skill_attribute",
+        "guard_blocked",
+        "tag_blocked",
+        "ignore_protection",
+        "ignore_stealth",
+        "crit_received_chance",
+        "riposte",
+        "tag",
+        "guarded",
+        "vampire",
+        "stealth",
+        "hp_dot_bleed",
+        "hp_dot_poison",
+        "hp_dot_heal",
+        "stress_dot",
+        "shuffle_dot",
+        "torch_increase_percent",
+        "torch_decrease_percent",
+        "torchlight_burn_percent",
+        "stress_on_miss",
+        "stress_from_idle_in_town",
+        "shard_reward_percent",
+        "shard_consume_percent",
+        "damage_reflect_percent",
+        "hp_dot_bleed_duration_received_percent",
+        "hp_dot_bleed_duration_percent",
+        "hp_dot_bleed_amount_received_percent",
+        "hp_dot_bleed_amount_percent",
+        "hp_dot_poison_duration_received_percent",
+        "hp_dot_poison_duration_percent",
+        "hp_dot_poison_amount_received_percent",
+        "hp_dot_poison_amount_percent",
+        "stress_dot_duration_received_percent",
+        "stress_dot_duration_percent",
+        "stress_dot_amount_received_percent",
+        "stress_dot_amount_percent",
+        "hp_heal_dot_duration_received_percent",
+        "hp_heal_dot_duration_percent",
+        "hp_heal_dot_amount_received_percent",
+        "hp_heal_dot_amount_percent",
+        "shuffle_dot_duration_received_percent",
+        "shuffle_dot_duration_percent",
+        "guard_duration_received_percent",
+        "guard_duration_percent",
+        "cure_bleed_received_chance",
+        "cure_poison_received_chance",
+        "cure_bleed_chance",
+        "cure_poison_chance",
+        "random_target_friendly_chance",
+        "random_target_attack_chance",
+        "transfer_debuff_from_attacker_chance",
+        "transfer_buff_from_attacker_chance",
+        "quirk_tag_evolution_duration",
+        "deathblow_chance",
+        "heartattack_stress_heal_percent",
+        "ignore_guard",
+        "buff_duration_percent",
+        "riposte_duration_percent"
+      ],
+      ".steal_buff_stat_type": [
+        "hp_heal_amount",
+        "hp_heal_percent",
+        "hp_heal_received_percent",
+        "combat_stat_multiply",
+        "combat_stat_add",
+        "resistance",
+        "poison_chance",
+        "bleed_chance",
+        "stress_dmg_percent",
+        "stress_dmg_received_percent",
+        "stress_heal_percent",
+        "stress_heal_received_percent",
+        "party_surprise_chance",
+        "monsters_surprise_chance",
+        "ambush_chance",
+        "scouting_chance",
+        "starving_damage_percent",
+        "upgrade_discount",
+        "damage_received_percent",
+        "debuff_chance",
+        "resolve_check_percent",
+        "stun_chance",
+        "move_chance",
+        "remove_negative_quirk_chance",
+        "food_consumption_percent",
+        "resolve_xp_bonus_percent",
+        "activity_side_effect_chance",
+        "vampire_evolution_duration",
+        "quirk_evolution_death_immune",
+        "disable_combat_skill_attribute",
+        "guard_blocked",
+        "tag_blocked",
+        "ignore_protection",
+        "ignore_stealth",
+        "crit_received_chance",
+        "riposte",
+        "tag",
+        "guarded",
+        "vampire",
+        "stealth",
+        "hp_dot_bleed",
+        "hp_dot_poison",
+        "hp_dot_heal",
+        "stress_dot",
+        "shuffle_dot",
+        "torch_increase_percent",
+        "torch_decrease_percent",
+        "torchlight_burn_percent",
+        "stress_on_miss",
+        "stress_from_idle_in_town",
+        "shard_reward_percent",
+        "shard_consume_percent",
+        "damage_reflect_percent",
+        "hp_dot_bleed_duration_received_percent",
+        "hp_dot_bleed_duration_percent",
+        "hp_dot_bleed_amount_received_percent",
+        "hp_dot_bleed_amount_percent",
+        "hp_dot_poison_duration_received_percent",
+        "hp_dot_poison_duration_percent",
+        "hp_dot_poison_amount_received_percent",
+        "hp_dot_poison_amount_percent",
+        "stress_dot_duration_received_percent",
+        "stress_dot_duration_percent",
+        "stress_dot_amount_received_percent",
+        "stress_dot_amount_percent",
+        "hp_heal_dot_duration_received_percent",
+        "hp_heal_dot_duration_percent",
+        "hp_heal_dot_amount_received_percent",
+        "hp_heal_dot_amount_percent",
+        "shuffle_dot_duration_received_percent",
+        "shuffle_dot_duration_percent",
+        "guard_duration_received_percent",
+        "guard_duration_percent",
+        "cure_bleed_received_chance",
+        "cure_poison_received_chance",
+        "cure_bleed_chance",
+        "cure_poison_chance",
+        "random_target_friendly_chance",
+        "random_target_attack_chance",
+        "transfer_debuff_from_attacker_chance",
+        "transfer_buff_from_attacker_chance",
+        "quirk_tag_evolution_duration",
+        "deathblow_chance",
+        "heartattack_stress_heal_percent",
+        "ignore_guard",
+        "buff_duration_percent",
+        "riposte_duration_percent"
+      ],
+      ".buff_sub_type": [
+        "max_hp",
+        "damage_low",
+        "damage_high",
+        "attack_rating",
+        "crit_chance",
+        "defense_rating",
+        "protection_rating",
+        "speed_rating",
+        "riposte_on_hit_chance",
+        "riposte_on_miss_chance",
+        "stun",
+        "move",
+        "poison",
+        "bleed",
+        "disease",
+        "debuff",
+        "death_blow",
+        "trap",
+        "armour",
+        "weapon",
+        "combat_skill",
+        "camping_skill",
+        "add_currency",
+        "remove_currency",
+        "add_trinket",
+        "remove_trinket",
+        "activity_lock",
+        "apply_buff",
+        "go_missing",
+        "heal",
+        "buff",
+        "tag",
+        "stress",
+        "guard",
+        "daze",
+        "hero_skill",
+        "hero_skill_multi_target",
+        "monster_skill",
+        "monster_skill_multi_target",
+        "camp_skill",
+        "camp_skill_multi_target",
+        "companion",
+        "eat",
+        "act_out",
+        "damage_heal",
+        "effect",
+        "flashback",
+        "dot",
+        "hunger",
+        "hero_crit",
+        "hero_killing_blow",
+        "mode",
+        "control",
+        "unkown",
+        "town_idle",
+        "quest_fail",
+        "pass",
+        "camping_relieve_stress",
+        "camping_eat",
+        "tile",
+        "retreat",
+        "capture",
+        "monster_crit"
+      ],
+      ".buff_duration_type": [
+        "round",
+        "combat_end",
+        "quest_end",
+        "quest_complete",
+        "quest_not_complete",
+        "activity_end",
+        "idle_start_town_visit",
+        "till_removed",
+        "none",
+        "before_turn",
+        "after_turn",
+        "after_round"
+      ],
+      ".buff_source_type": [
+        "bsrc_skill",
+        "bsrc_notspecified",
+        "bsrc_affliction",
+        "bsrc_virtue",
+        "bsrc_item",
+        "bsrc_curio",
+        "bsrc_disease",
+        "bsrc_riposte",
+        "bsrc_campingskill",
+        "bsrc_quirk",
+        "bsrc_trinket",
+        "bsrc_trinket_set",
+        "bsrc_instantSkill",
+        "bsrc_guard",
+        "bsrc_deathsdoor",
+        "bsrc_deathsdoor_recovery",
+        "bsrc_deathsdoor_recovery_heart_attack",
+        "bsrc_quest_failure",
+        "bsrc_companion",
+        "bsrc_stun",
+        "bsrc_town",
+        "bsrc_district",
+        "bsrc_torchsettings",
+        "bsrc_crit",
+        "bsrc_trinket_additional_effect",
+        "bsrc_battle_modifier",
+        "bsrc_never_again",
+        "bsrc_vampire",
+        "bsrc_town_event",
+        "bsrc_flashback_start",
+        "bsrc_flashback_result",
+        "bsrc_completed_darkest_dungeon_quest_party_hero",
+        "bsrc_quest_modifier",
+        "bsrc_last_hero",
+        "combat_end"
+      ],
+      ".steal_buff_source_type": [
+        "bsrc_skill",
+        "bsrc_notspecified",
+        "bsrc_affliction",
+        "bsrc_virtue",
+        "bsrc_item",
+        "bsrc_curio",
+        "bsrc_disease",
+        "bsrc_riposte",
+        "bsrc_campingskill",
+        "bsrc_quirk",
+        "bsrc_trinket",
+        "bsrc_trinket_set",
+        "bsrc_instantSkill",
+        "bsrc_guard",
+        "bsrc_deathsdoor",
+        "bsrc_deathsdoor_recovery",
+        "bsrc_deathsdoor_recovery_heart_attack",
+        "bsrc_quest_failure",
+        "bsrc_companion",
+        "bsrc_stun",
+        "bsrc_town",
+        "bsrc_district",
+        "bsrc_torchsettings",
+        "bsrc_crit",
+        "bsrc_trinket_additional_effect",
+        "bsrc_battle_modifier",
+        "bsrc_never_again",
+        "bsrc_vampire",
+        "bsrc_town_event",
+        "bsrc_flashback_start",
+        "bsrc_flashback_result",
+        "bsrc_completed_darkest_dungeon_quest_party_hero",
+        "bsrc_quest_modifier",
+        "bsrc_last_hero",
+        "combat_end"
+      ],
+      ".dotSource": [
+        "bsrc_skill",
+        "bsrc_notspecified",
+        "bsrc_affliction",
+        "bsrc_virtue",
+        "bsrc_item",
+        "bsrc_curio",
+        "bsrc_disease",
+        "bsrc_riposte",
+        "bsrc_campingskill",
+        "bsrc_quirk",
+        "bsrc_trinket",
+        "bsrc_trinket_set",
+        "bsrc_instantSkill",
+        "bsrc_guard",
+        "bsrc_deathsdoor",
+        "bsrc_deathsdoor_recovery",
+        "bsrc_deathsdoor_recovery_heart_attack",
+        "bsrc_quest_failure",
+        "bsrc_companion",
+        "bsrc_stun",
+        "bsrc_town",
+        "bsrc_district",
+        "bsrc_torchsettings",
+        "bsrc_crit",
+        "bsrc_trinket_additional_effect",
+        "bsrc_battle_modifier",
+        "bsrc_never_again",
+        "bsrc_vampire",
+        "bsrc_town_event",
+        "bsrc_flashback_start",
+        "bsrc_flashback_result",
+        "bsrc_completed_darkest_dungeon_quest_party_hero",
+        "bsrc_quest_modifier",
+        "bsrc_last_hero",
+        "combat_end"
+      ],
+      ".source_heal_type": [
+        "hero_skill",
+        "hero_skill_multi_target",
+        "monster_skill",
+        "monster_skill_multi_target",
+        "camp_skill",
+        "camp_skill_multi_target",
+        "companion",
+        "eat",
+        "act_out",
+        "damage_heal",
+        "effect",
+        "flashback",
+        "dot",
+        "curio"
+      ],
+      ".damage_type": [
+        "unknown",
+        "trap",
+        "obstacle",
+        "hunger",
+        "attack",
+        "bleed",
+        "healing",
+        "poisoned",
+        "captor",
+        "ddexit",
+        "townexit",
+        "death",
+        "heartattack",
+        "theblood",
+        "effect",
+        "quirkevolutiondeath",
+        "reflect",
+        "riposte",
+        "additionaleffect",
+        "supply",
+        "quest_item",
+        "trinket",
+        "estate_currency",
+        "journal_page",
+        "torch",
+        "shovel"
+      ],
+      ".damage_source_type": [
+        "unknown",
+        "hunger",
+        "trap",
+        "obstacle",
+        "friendly",
+        "monster",
+        "hero",
+        "friendly_quirk_actout",
+        "friendly_trait_actout",
+        "item",
+        "effect",
+        "quirk",
+        "reflect",
+        "trinket",
+        "estate"
+      ],
+      ".combat_stat_buff": [
+        "0",
+        "1"
+      ],
+      ".cure": [
+        "0",
+        "1"
+      ],
+      ".cure_bleed": [
+        "0",
+        "1"
+      ],
+      ".cure_poison": [
+        "0",
+        "1"
+      ],
+      ".clearDotStress": [
+        "0",
+        "1"
+      ],
+      ".tag": [
+        "0",
+        "1"
+      ],
+      ".untag": [
+        "0",
+        "1"
+      ],
+      ".unstun": [
+        "0",
+        "1"
+      ],
+      ".riposte": [
+        "0",
+        "1"
+      ],
+      ".clear_riposte": [
+        "0",
+        "1"
+      ],
+      ".guard": [
+        "0",
+        "1"
+      ],
+      ".clearguarding": [
+        "0",
+        "1"
+      ],
+      ".clearguarded": [
+        "0",
+        "1"
+      ],
+      ".item": [
+        "0",
+        "1"
+      ],
+      ".curio": [
+        "0",
+        "1"
+      ],
+      ".dotShuffle": [
+        "0",
+        "1"
+      ],
+      ".kill": [
+        "0",
+        "1"
+      ],
+      ".immobilize": [
+        "0",
+        "1"
+      ],
+      ".unimmobilize": [
+        "0",
+        "1"
+      ],
+      ".uncontrol": [
+        "0",
+        "1"
+      ],
+      ".capture": [
+        "0",
+        "1"
+      ],
+      ".capture_remove_from_party": [
+        "0",
+        "1"
+      ],
+      ".remove_vampire": [
+        "0",
+        "1"
+      ],
+      ".summon_does_roll_initiatives": [
+        "0",
+        "1"
+      ],
+      ".performer_rank_target": [
+        "0",
+        "1"
+      ],
+      ".stealth": [
+        "0",
+        "1"
+      ],
+      ".unstealth": [
+        "0",
+        "1"
+      ],
+      ".clear_debuff": [
+        "0",
+        "1"
+      ],
+      ".clearvirtue": [
+        "0",
+        "1"
+      ],
+      ".cure_disease": [
+        "0",
+        "1"
+      ],
+      ".daze": [
+        "0",
+        "1"
+      ],
+      ".undaze": [
+        "0",
+        "1"
+      ],
+      ".on_hit": [
+        "false",
+        "true"
+      ],
+      ".on_miss": [
+        "false",
+        "true"
+      ],
+      ".queue": [
+        "false",
+        "true"
+      ],
+      ".can_crit_heal": [
+        "false",
+        "true"
+      ],
+      ".swap_source_and_target": [
+        "false",
+        "true"
+      ],
+      ".crit_doesnt_apply_to_roll": [
+        "false",
+        "true"
+      ],
+      ".can_apply_on_death": [
+        "false",
+        "true"
+      ],
+      ".apply_once": [
+        "false",
+        "true"
+      ],
+      ".apply_with_result": [
+        "false",
+        "true"
+      ],
+      ".skill_instant": [
+        "false",
+        "true"
+      ],
+      ".set_monster_class_reset_buffs": [
+        "false",
+        "true"
+      ],
+      ".set_monster_class_clear_initative": [
+        "false",
+        "true"
+      ],
+      ".set_monster_class_clear_monster_brain_cooldowns": [
+        "false",
+        "true"
+      ],
+      ".set_monster_class_reset_scale": [
+        "false",
+        "true"
+      ],
+      ".has_description": [
+        "false",
+        "true"
+      ],
+      ".skips_endless_wave_curio": [
+        "false",
+        "true"
+      ],
+      ".riposte_validate": [
+        "false",
+        "true"
+      ],
+      ".buff_is_clear_debuff_valid": [
+        "false",
+        "true"
+      ],
+      ".refreshes_skill_uses": [
+        "false",
+        "true"
+      ],
+      ".individual_target_actor_rolls": [
+        "false",
+        "true"
+      ],
+      ".summon_can_spawn_loot": [
+        "false",
+        "true"
+      ],
+      ".set_monster_class_reset_hp": [
+        "false",
+        "true"
+      ],
+      ".summon_erase_data_on_roll": [
+        "false",
+        "true"
+      ],
+      ".summon_rank_is_previous_monster_class": [
+        "false",
+        "true"
+      ]
+    },
+    "doubleBoolKeywords": [
+      ".set_monster_class_reset_hp"
+    ],
+    "doubleBoolValuesForError": [
+      "0",
+      "1",
+      "false",
+      "true",
+      "False",
+      "True",
+      "FALSE",
+      "TRUE"
+    ],
+    "buffTypeToSubTypesMap": {
+      "hp_heal_amount": [
+        "hero_skill",
+        "hero_skill_multi_target",
+        "monster_skill",
+        "monster_skill_multi_target",
+        "camp_skill",
+        "camp_skill_multi_target",
+        "companion",
+        "eat",
+        "act_out",
+        "damage_heal",
+        "effect",
+        "flashback",
+        "dot",
+        "curio"
+      ],
+      "hp_heal_percent": [
+        "hero_skill",
+        "hero_skill_multi_target",
+        "monster_skill",
+        "monster_skill_multi_target",
+        "camp_skill",
+        "camp_skill_multi_target",
+        "companion",
+        "eat",
+        "act_out",
+        "damage_heal",
+        "effect",
+        "flashback",
+        "dot",
+        "curio"
+      ],
+      "hp_heal_received_percent": [
+        "hero_skill",
+        "hero_skill_multi_target",
+        "monster_skill",
+        "monster_skill_multi_target",
+        "camp_skill",
+        "camp_skill_multi_target",
+        "companion",
+        "eat",
+        "act_out",
+        "damage_heal",
+        "effect",
+        "flashback",
+        "dot",
+        "curio"
+      ],
+      "combat_stat_multiply": [
+        "max_hp",
+        "damage_low",
+        "damage_high",
+        "attack_rating",
+        "crit_chance",
+        "defense_rating",
+        "protection_rating",
+        "speed_rating",
+        "riposte_on_hit_chance",
+        "riposte_on_miss_chance"
+      ],
+      "combat_stat_add": [
+        "max_hp",
+        "damage_low",
+        "damage_high",
+        "attack_rating",
+        "crit_chance",
+        "defense_rating",
+        "protection_rating",
+        "speed_rating",
+        "riposte_on_hit_chance",
+        "riposte_on_miss_chance"
+      ],
+      "resistance": [
+        "stun",
+        "move",
+        "poison",
+        "bleed",
+        "disease",
+        "debuff",
+        "death_blow",
+        "trap"
+      ],
+      "stress_dmg_percent": [
+        "hunger",
+        "death_blow",
+        "hero_crit",
+        "hero_killing_blow",
+        "mode",
+        "control",
+        "unkown",
+        "town_idle",
+        "quest_fail",
+        "pass",
+        "camping_relieve_stress",
+        "camping_eat",
+        "tile",
+        "retreat",
+        "effect",
+        "capture",
+        "monster_crit"
+      ],
+      "stress_dmg_received_percent": [
+        "hunger",
+        "death_blow",
+        "hero_crit",
+        "hero_killing_blow",
+        "mode",
+        "control",
+        "unkown",
+        "town_idle",
+        "quest_fail",
+        "pass",
+        "camping_relieve_stress",
+        "camping_eat",
+        "tile",
+        "retreat",
+        "effect",
+        "capture",
+        "monster_crit"
+      ],
+      "stress_heal_percent": [
+        "hunger",
+        "death_blow",
+        "hero_crit",
+        "hero_killing_blow",
+        "mode",
+        "control",
+        "unkown",
+        "town_idle",
+        "quest_fail",
+        "pass",
+        "camping_relieve_stress",
+        "camping_eat",
+        "tile",
+        "retreat",
+        "effect",
+        "capture",
+        "monster_crit"
+      ],
+      "stress_heal_received_percent": [
+        "hunger",
+        "death_blow",
+        "hero_crit",
+        "hero_killing_blow",
+        "mode",
+        "control",
+        "unkown",
+        "town_idle",
+        "quest_fail",
+        "pass",
+        "camping_relieve_stress",
+        "camping_eat",
+        "tile",
+        "retreat",
+        "effect",
+        "capture",
+        "monster_crit"
+      ],
+      "activity_side_effect_chance": [
+        "add_currency",
+        "remove_currency",
+        "add_trinket",
+        "remove_trinket",
+        "activity_lock",
+        "apply_buff",
+        "go_missing"
+      ],
+      "disable_combat_skill_attribute": [
+        "heal",
+        "buff",
+        "debuff",
+        "bleed",
+        "poison",
+        "stun",
+        "tag",
+        "stress",
+        "move",
+        "guard",
+        "daze"
+      ]
+    },
+    "mustHaveSubBuffTypes": [
+      "combat_stat_multiply",
+      "combat_stat_add",
+      "resistance",
+      "activity_side_effect_chance",
+      "disable_combat_skill_attribute"
+    ],
+    "subFreeBuffTypes": [
+      "upgrade_discount",
+      "riposte",
+      "quirk_tag_evolution_duration"
+    ]
+  },
+  "info": {
+    "allHeaders": [
+      "display_modifier:",
+      "riposte_skill:",
+      "rendering:",
+      "controlled:",
+      "health_bar:",
+      "mode:",
+      "hp_reaction:",
+      "death_reaction:",
+      "crit:",
+      "additional_effect:",
+      "display:",
+      "commonfx:",
+      "battle_backdrop:",
+      "wave_background:",
+      "stats:",
+      "skill:",
+      "personality:",
+      "loot:",
+      "tag:",
+      "enemy_type:",
+      "defending_area_pos_offset:",
+      "initiative:",
+      "monster_brain:",
+      "captor_empty:",
+      "captor_full:",
+      "life_link:",
+      "shared_health:",
+      "shape_shifter:",
+      "torchlight_modifier:",
+      "battle_modifier:",
+      "death_class:",
+      "death_damage:",
+      "life_time:",
+      "controller:",
+      "battle_stage:",
+      "companion:",
+      "skill_reaction:",
+      "audio_modifier:",
+      "spawn:",
+      "mash_modifier:",
+      "torch_settings:",
+      "kill_quirk:",
+      "tutorial:",
+      "wave_spawning:",
+      "colour_grade:",
+      "resistances:",
+      "weapon:",
+      "armour:",
+      "combat_skill:",
+      "combat_move_skill:",
+      "id_index:",
+      "sorting_index:",
+      "generation:",
+      "skill_selection:",
+      "incompatible_party_member:",
+      "deaths_door:",
+      "last_hero:",
+      "extra_battle_loot:",
+      "extra_curio_loot:",
+      "extra_shard_bonus:",
+      "extra_stack_limit:",
+      "progression:",
+      "overstressed_modifier:",
+      "activity_modifier:",
+      "quirk_modifier:",
+      "act_out_display:",
+      "restriction:"
+    ],
+    "infoContextMap": {
+      "display_modifier:": [
+        ".disable_halos",
+        ".disabled_popup_text_types",
+        ".use_centre_skill_announcement",
+        ".disable_health",
+        ".anim_override",
+        ".show_spawn_fx"
+      ],
+      "riposte_skill:": [
+        ".id",
+        ".dmg",
+        ".atk",
+        ".def",
+        ".move",
+        ".crit",
+        ".level",
+        ".type",
+        ".starting_cooldown",
+        ".per_battle_limit",
+        ".per_turn_limit",
+        ".is_continue_turn",
+        ".launch",
+        ".target",
+        ".self_target_valid",
+        ".extra_targets_chance",
+        ".extra_targets_count",
+        ".is_crit_valid",
+        ".effect",
+        ".valid_modes",
+        ".ignore_stealth",
+        ".ignore_guard",
+        ".can_miss",
+        ".can_be_riposted",
+        ".ignore_protection",
+        ".required_performer_hp_range",
+        ".rank_damage_modifiers",
+        ".heal",
+        ".can_crit_heal",
+        ".generation_guaranteed",
+        ".is_user_selected_targets",
+        ".is_knowledgeable",
+        ".is_monster_rerank_valid_on_attack",
+        ".is_monster_rerank_valid_on_friendly_presentation_end",
+        ".is_monster_rerank_valid_on_friendly_post_result",
+        ".is_stall_invalidating",
+        ".refresh_after_each_wave",
+        ".damage_heal_base_class_ids",
+        ".ignore_deathsdoor",
+        ".icon",
+        ".anim",
+        ".fx",
+        ".targfx",
+        ".targheadfx",
+        ".targchestfx",
+        ".misstargfx",
+        ".misstargheadfx",
+        ".misstargchestfx",
+        ".area_pos_offset",
+        ".target_area_pos_offset",
+        ".reset_source_stance",
+        ".reset_target_stance",
+        ".can_display_selection",
+        ".hide_performer_health",
+        ".condensed_tooltip_effects",
+        ".condensed_tooltip_stats",
+        ".condensed_tooltip_type",
+        ".condensed_tooltip_effects_per_line",
+        ".nil",
+        ".custom_target_anim",
+        ".has_crit_vo",
+        ".custom_idle_anim_name",
+        ".custom_idle_round_duration",
+        ".can_display_skill_name",
+        ".can_display_performer_selection_after_turn"
+      ],
+      "rendering:": [
+        ".sort_position_z_rank_override"
+      ],
+      "controlled:": [
+        ".target_rank"
+      ],
+      "health_bar:": [
+        ".type"
+      ],
+      "mode:": [
+        ".id",
+        ".is_raid_default",
+        ".bark_override_id",
+        ".stress_damage_per_turn",
+        ".battle_complete_combat_skill_id",
+        ".affliction_combat_skill_id",
+        ".always_guard_actor_base_class_ids",
+        ".is_targetable",
+        ".keep_rounds_in_ranks"
+      ],
+      "hp_reaction:": [
+        ".hp_ratio",
+        ".is_under",
+        ".effects"
+      ],
+      "death_reaction:": [
+        ".target_allies",
+        ".target_enemies",
+        ".effects"
+      ],
+      "crit:": [
+        ".effects",
+        ".is_valid_effects_target"
+      ],
+      "additional_effect:": [
+        ".is_valid_trinket_target",
+        ".is_valid_trinket_attacker"
+      ],
+      "display:": [
+        ".size"
+      ],
+      "commonfx:": [
+        ".deathfx"
+      ],
+      "battle_backdrop:": [
+        ".background_name",
+        ".animation",
+        ".isFlat"
+      ],
+      "wave_background:": [
+        ".background_name",
+        ".animation"
+      ],
+      "stats:": [
+        ".hp",
+        ".prot",
+        ".def",
+        ".spd",
+        ".stun_resist",
+        ".move_resist",
+        ".poison_resist",
+        ".bleed_resist",
+        ".disease_resist",
+        ".debuff_resist",
+        ".death_blow_resist",
+        ".trap_resist"
+      ],
+      "skill:": [
+        ".id",
+        ".dmg",
+        ".atk",
+        ".def",
+        ".move",
+        ".crit",
+        ".level",
+        ".type",
+        ".starting_cooldown",
+        ".per_battle_limit",
+        ".per_turn_limit",
+        ".is_continue_turn",
+        ".launch",
+        ".target",
+        ".self_target_valid",
+        ".extra_targets_chance",
+        ".extra_targets_count",
+        ".is_crit_valid",
+        ".effect",
+        ".valid_modes",
+        ".ignore_stealth",
+        ".ignore_guard",
+        ".can_miss",
+        ".can_be_riposted",
+        ".ignore_protection",
+        ".required_performer_hp_range",
+        ".rank_damage_modifiers",
+        ".heal",
+        ".can_crit_heal",
+        ".generation_guaranteed",
+        ".is_user_selected_targets",
+        ".is_knowledgeable",
+        ".is_monster_rerank_valid_on_attack",
+        ".is_monster_rerank_valid_on_friendly_presentation_end",
+        ".is_monster_rerank_valid_on_friendly_post_result",
+        ".is_stall_invalidating",
+        ".refresh_after_each_wave",
+        ".damage_heal_base_class_ids",
+        ".ignore_deathsdoor",
+        ".icon",
+        ".anim",
+        ".fx",
+        ".targfx",
+        ".targheadfx",
+        ".targchestfx",
+        ".misstargfx",
+        ".misstargheadfx",
+        ".misstargchestfx",
+        ".area_pos_offset",
+        ".target_area_pos_offset",
+        ".reset_source_stance",
+        ".reset_target_stance",
+        ".can_display_selection",
+        ".hide_performer_health",
+        ".condensed_tooltip_effects",
+        ".condensed_tooltip_stats",
+        ".condensed_tooltip_type",
+        ".condensed_tooltip_effects_per_line",
+        ".nil",
+        ".custom_target_anim",
+        ".has_crit_vo",
+        ".custom_idle_anim_name",
+        ".custom_idle_round_duration",
+        ".can_display_skill_name",
+        ".can_display_performer_selection_after_turn"
+      ],
+      "death_damage:": [
+        ".target_base_class_id",
+        ".target_damage"
+      ],
+      "personality:": [
+        ".prefskill"
+      ],
+      "loot:": [
+        ".code",
+        ".count",
+        ".raid_finish_quirk_class_id"
+      ],
+      "tag:": [
+        ".id"
+      ],
+      "enemy_type:": [
+        ".id"
+      ],
+      "defending_area_pos_offset:": [
+        ".offset"
+      ],
+      "initiative:": [
+        ".number_of_turns_per_round",
+        ".hide_indicator"
+      ],
+      "monster_brain:": [
+        ".id"
+      ],
+      "captor_empty:": [
+        ".performing_monster_captor_base_class",
+        ".captor_full_monster_class",
+        ".capture_effects",
+        ".reset_hp",
+        ".count_captor_full_damage"
+      ],
+      "captor_full:": [
+        ".captor_empty_monster_class",
+        ".release_on_death",
+        ".release_on_prisoner_at_deaths_door",
+        ".release_on_prisoner_affliction",
+        ".switch_class_on_death",
+        ".release_effects",
+        ".per_turn_damage_percent",
+        ".per_turn_stress_damage",
+        ".has_prisoner_overlay",
+        ".unique_first_action_sfx",
+        ".reset_hp",
+        ".use_previous_monster_class_hp",
+        ".add_current_hp",
+        ".use_bark_offset"
+      ],
+      "life_link:": [
+        ".base_class",
+        ".class",
+        ".does_spawn_loot",
+        ".is_death_class_valid"
+      ],
+      "shared_health:": [
+        ".id"
+      ],
+      "shape_shifter:": [
+        ".monster_class_ids",
+        ".monster_class_chances",
+        ".monster_class_valid_ranks",
+        ".round_frequency",
+        ".fx_name"
+      ],
+      "torchlight_modifier:": [
+        ".min",
+        ".max"
+      ],
+      "battle_modifier:": [
+        ".disable_stall_penalty",
+        ".does_count_towards_stall_penalty",
+        ".accelerate_stall_penalty",
+        ".can_surprise",
+        ".can_be_surprised",
+        ".always_surprise",
+        ".always_be_surprised",
+        ".can_relieve_stress_from_crit",
+        ".can_relieve_stress_from_killing_blow",
+        ".can_be_summon_rank",
+        ".does_count_as_monster_size_for_monster_brain",
+        ".does_count_as_guardable_for_monster_brain",
+        ".can_be_missed",
+        ".can_be_hit",
+        ".is_valid_friendly_target",
+        ".can_be_damaged_directly",
+        ".can_be_random_target",
+        ".can_be_guarded",
+        ".remove_on_retreat",
+        ".living_other_enemy_buffs",
+        ".living_hero_buff_instance_ids",
+        ".disabled_act_out_combat_start_turn_types"
+      ],
+      "death_class:": [
+        ".monster_class_id",
+        ".random_monster_class_ids",
+        ".random_monster_class_chances",
+        ".use_previous_monster_hp",
+        ".is_valid_on_bleed_dot",
+        ".is_valid_on_blight_dot",
+        ".is_valid_on_crit",
+        ".reset_scale_anim",
+        ".on_change_sfx",
+        ".type",
+        ".can_die_from_damage",
+        ".carry_over_hp_min_percent",
+        ".clear_monster_brain_cooldowns",
+        ".change_class_effects"
+      ],
+      "life_time:": [
+        ".alive_round_limit",
+        ".does_check_for_loot"
+      ],
+      "controller:": [
+        ".stress_per_controlled_turn",
+        ".uncontrol_effects"
+      ],
+      "battle_stage:": [
+        ".id"
+      ],
+      "companion:": [
+        ".monster_class",
+        ".heal_per_turn_percent",
+        ".buffs"
+      ],
+      "skill_reaction:": [
+        ".was_hit_performer_effects",
+        ".was_hit_target_effects",
+        ".was_killed_other_monsters_effects",
+        ".was_killed_by_hero_effects",
+        ".was_killed_all_heroes_effects",
+        ".was_killed_effects"
+      ],
+      "audio_modifier:": [
+        ".intensity",
+        ".variation_count",
+        ".ambience_parameter_ids",
+        ".ambience_parameter_values"
+      ],
+      "spawn:": [
+        ".effects",
+        ".wave_effects"
+      ],
+      "mash_modifier:": [
+        ".disable_additional_mash_for_infestation_sequence_on_death"
+      ],
+      "torch_settings:": [
+        ".torch_settings_id"
+      ],
+      "kill_quirk:": [],
+      "tutorial:": [
+        ".id"
+      ],
+      "wave_spawning:": [
+        ".prefers_front"
+      ],
+      "colour_grade:": [
+        ".name"
+      ],
+      "resistances:": [
+        ".stun",
+        ".move",
+        ".poison",
+        ".bleed",
+        ".disease",
+        ".debuff",
+        ".death_blow",
+        ".trap"
+      ],
+      "weapon:": [
+        ".name",
+        ".atk",
+        ".dmg",
+        ".crit",
+        ".spd",
+        ".icon",
+        ".upgradeRequirementCode"
+      ],
+      "armour:": [
+        ".name",
+        ".def",
+        ".prot",
+        ".hp",
+        ".spd",
+        ".icon",
+        ".upgradeRequirementCode"
+      ],
+      "combat_skill:": [
+        ".id",
+        ".dmg",
+        ".atk",
+        ".def",
+        ".move",
+        ".crit",
+        ".level",
+        ".type",
+        ".starting_cooldown",
+        ".per_battle_limit",
+        ".per_turn_limit",
+        ".is_continue_turn",
+        ".launch",
+        ".target",
+        ".self_target_valid",
+        ".extra_targets_chance",
+        ".extra_targets_count",
+        ".is_crit_valid",
+        ".effect",
+        ".valid_modes",
+        ".ignore_stealth",
+        ".ignore_guard",
+        ".can_miss",
+        ".can_be_riposted",
+        ".ignore_protection",
+        ".required_performer_hp_range",
+        ".rank_damage_modifiers",
+        ".heal",
+        ".can_crit_heal",
+        ".generation_guaranteed",
+        ".is_user_selected_targets",
+        ".is_knowledgeable",
+        ".is_monster_rerank_valid_on_attack",
+        ".is_monster_rerank_valid_on_friendly_presentation_end",
+        ".is_monster_rerank_valid_on_friendly_post_result",
+        ".is_stall_invalidating",
+        ".refresh_after_each_wave",
+        ".damage_heal_base_class_ids",
+        ".ignore_deathsdoor",
+        ".icon",
+        ".anim",
+        ".fx",
+        ".targfx",
+        ".targheadfx",
+        ".targchestfx",
+        ".misstargfx",
+        ".misstargheadfx",
+        ".misstargchestfx",
+        ".area_pos_offset",
+        ".target_area_pos_offset",
+        ".reset_source_stance",
+        ".reset_target_stance",
+        ".can_display_selection",
+        ".hide_performer_health",
+        ".condensed_tooltip_effects",
+        ".condensed_tooltip_stats",
+        ".condensed_tooltip_type",
+        ".condensed_tooltip_effects_per_line",
+        ".nil",
+        ".custom_target_anim",
+        ".has_crit_vo",
+        ".custom_idle_anim_name",
+        ".custom_idle_round_duration",
+        ".can_display_skill_name",
+        ".can_display_performer_selection_after_turn"
+      ],
+      "combat_move_skill:": [
+        ".id",
+        ".dmg",
+        ".atk",
+        ".def",
+        ".move",
+        ".crit",
+        ".level",
+        ".type",
+        ".starting_cooldown",
+        ".per_battle_limit",
+        ".per_turn_limit",
+        ".is_continue_turn",
+        ".launch",
+        ".target",
+        ".self_target_valid",
+        ".extra_targets_chance",
+        ".extra_targets_count",
+        ".is_crit_valid",
+        ".effect",
+        ".valid_modes",
+        ".ignore_stealth",
+        ".ignore_guard",
+        ".can_miss",
+        ".can_be_riposted",
+        ".ignore_protection",
+        ".required_performer_hp_range",
+        ".rank_damage_modifiers",
+        ".heal",
+        ".can_crit_heal",
+        ".generation_guaranteed",
+        ".is_user_selected_targets",
+        ".is_knowledgeable",
+        ".is_monster_rerank_valid_on_attack",
+        ".is_monster_rerank_valid_on_friendly_presentation_end",
+        ".is_monster_rerank_valid_on_friendly_post_result",
+        ".is_stall_invalidating",
+        ".refresh_after_each_wave",
+        ".damage_heal_base_class_ids",
+        ".ignore_deathsdoor",
+        ".icon",
+        ".anim",
+        ".fx",
+        ".targfx",
+        ".targheadfx",
+        ".targchestfx",
+        ".misstargfx",
+        ".misstargheadfx",
+        ".misstargchestfx",
+        ".area_pos_offset",
+        ".target_area_pos_offset",
+        ".reset_source_stance",
+        ".reset_target_stance",
+        ".can_display_selection",
+        ".hide_performer_health",
+        ".condensed_tooltip_effects",
+        ".condensed_tooltip_stats",
+        ".condensed_tooltip_type",
+        ".condensed_tooltip_effects_per_line",
+        ".nil",
+        ".custom_target_anim",
+        ".has_crit_vo",
+        ".custom_idle_anim_name",
+        ".custom_idle_round_duration",
+        ".can_display_skill_name",
+        ".can_display_performer_selection_after_turn"
+      ],
+      "id_index:": [
+        ".index"
+      ],
+      "sorting_index:": [
+        ".index"
+      ],
+      "generation:": [
+        ".is_generation_enabled",
+        ".number_of_positive_quirks_min",
+        ".number_of_positive_quirks_max",
+        ".number_of_negative_quirks_min",
+        ".number_of_negative_quirks_max",
+        ".number_of_class_specific_camping_skills",
+        ".number_of_shared_camping_skills",
+        ".number_of_random_combat_skills",
+        ".number_of_cards_in_deck",
+        ".card_chance",
+        ".reduce_number_of_cards_in_deck_hero_class_id",
+        ".reduce_number_of_cards_in_deck_amount",
+        ".town_event_dependency"
+      ],
+      "skill_selection:": [
+        ".can_select_combat_skills",
+        ".number_of_selected_combat_skills_max"
+      ],
+      "incompatible_party_member:": [
+        ".id",
+        ".hero_tag"
+      ],
+      "deaths_door:": [
+        ".buffs",
+        ".recovery_buffs",
+        ".recovery_heart_attack_buffs",
+        ".enter_effects",
+        ".enter_effect_round_cooldown"
+      ],
+      "last_hero:": [
+        ".buffs"
+      ],
+      "extra_battle_loot:": [
+        ".code",
+        ".count"
+      ],
+      "extra_curio_loot:": [
+        ".code",
+        ".count"
+      ],
+      "extra_shard_bonus:": [
+        ".amount"
+      ],
+      "extra_stack_limit:": [
+        ".id"
+      ],
+      "progression:": [
+        ".has_caretaker_goals"
+      ],
+      "overstressed_modifier:": [
+        ".override_trait_type_ids",
+        ".override_trait_type_chances"
+      ],
+      "activity_modifier:": [
+        ".override_valid_activity_ids",
+        ".override_stress_removal_amount_low",
+        ".override_stress_removal_amount_high"
+      ],
+      "quirk_modifier:": [
+        ".incompatible_class_ids"
+      ],
+      "act_out_display:": [
+        ".attack_friendly_anim",
+        ".attack_friendly_fx",
+        ".attack_friendly_targchestfx",
+        ".attack_friendly_sfx"
+      ],
+      "restriction:": [
+        ".enabled_dlc"
+      ]
+    },
+    "keywordValueMap": {
+      "BOOL": [
+        "true",
+        "false"
+      ],
+      ".disabled_act_out_combat_start_turn_types": [
+        "nothing",
+        "bark_stress",
+        "change_pos",
+        "ignore_command",
+        "random_command",
+        "retreat_from_combat",
+        "attack_friendly",
+        "attack_self",
+        "mark_self",
+        "stress_heal_self",
+        "stress_heal_party",
+        "buff_random_party_member",
+        "buff_party",
+        "heal_self",
+        "consume_item"
+      ],
+      "SKILL_TYPE": [
+        "melee",
+        "ranged",
+        "move",
+        "teleport"
+      ],
+      ".disabled_popup_text_types": [
+        "actor_dot_complete",
+        "pass",
+        "hp_heal_dot_onset",
+        "hp_heal_dot",
+        "hp_heal_dot_crit",
+        "miss",
+        "no_damage",
+        "crit_damage",
+        "damage",
+        "death_avoided",
+        "deathblow",
+        "hero_heal",
+        "hero_heal_crit",
+        "monster_heal",
+        "monster_heal_crit",
+        "stress_reduce",
+        "stress_damage",
+        "resist",
+        "move_resist",
+        "disease_resist",
+        "buff",
+        "debuff",
+        "debuff_resist",
+        "stun",
+        "stun_resist",
+        "stun_clear",
+        "poison",
+        "poison_resist",
+        "bleed",
+        "bleed_resist",
+        "cured",
+        "cure_failed",
+        "tagged",
+        "guard",
+        "guard_failed",
+        "riposte",
+        "full",
+        "heart_attack",
+        "heal_failed",
+        "vampire",
+        "vampire_resist",
+        "stress_dot",
+        "stress_dot_resist",
+        "shuffle_dot",
+        "shuffle_dot_resist",
+        "health_damage_block_onset",
+        "health_damage_block",
+        "tag_block",
+        "damage_reflect",
+        "control_resist",
+        "refresh_skills",
+        "daze",
+        "daze_resist",
+        "guard_break"
+      ]
+    },
+    "valueContexts": [
+      {
+        "header": "display_modifier:",
+        "keyword": ".disable_halos",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "display_modifier:",
+        "keyword": ".disabled_popup_text_types",
+        "values": [
+          "actor_dot_complete",
+          "pass",
+          "hp_heal_dot_onset",
+          "hp_heal_dot",
+          "hp_heal_dot_crit",
+          "miss",
+          "no_damage",
+          "crit_damage",
+          "damage",
+          "death_avoided",
+          "deathblow",
+          "hero_heal",
+          "hero_heal_crit",
+          "monster_heal",
+          "monster_heal_crit",
+          "stress_reduce",
+          "stress_damage",
+          "resist",
+          "move_resist",
+          "disease_resist",
+          "buff",
+          "debuff",
+          "debuff_resist",
+          "stun",
+          "stun_resist",
+          "stun_clear",
+          "poison",
+          "poison_resist",
+          "bleed",
+          "bleed_resist",
+          "cured",
+          "cure_failed",
+          "tagged",
+          "guard",
+          "guard_failed",
+          "riposte",
+          "full",
+          "heart_attack",
+          "heal_failed",
+          "vampire",
+          "vampire_resist",
+          "stress_dot",
+          "stress_dot_resist",
+          "shuffle_dot",
+          "shuffle_dot_resist",
+          "health_damage_block_onset",
+          "health_damage_block",
+          "tag_block",
+          "damage_reflect",
+          "control_resist",
+          "refresh_skills",
+          "daze",
+          "daze_resist",
+          "guard_break"
+        ]
+      },
+      {
+        "header": "display_modifier:",
+        "keyword": ".use_centre_skill_announcement",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "display_modifier:",
+        "keyword": ".disable_health",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "display_modifier:",
+        "keyword": ".show_spawn_fx",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".type",
+        "values": [
+          "melee",
+          "ranged",
+          "move",
+          "teleport"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_continue_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".self_target_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_crit_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".ignore_stealth",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".ignore_guard",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_miss",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_be_riposted",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".ignore_protection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_crit_heal",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".generation_guaranteed",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_user_selected_targets",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_knowledgeable",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_monster_rerank_valid_on_attack",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_presentation_end",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_post_result",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".is_stall_invalidating",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".refresh_after_each_wave",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".ignore_deathsdoor",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".reset_source_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".reset_target_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_display_selection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".hide_performer_health",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".condensed_tooltip_effects",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".condensed_tooltip_stats",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".condensed_tooltip_type",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".nil",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".has_crit_vo",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_display_skill_name",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".can_display_performer_selection_after_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "mode:",
+        "keyword": ".is_raid_default",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "mode:",
+        "keyword": ".is_targetable",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "mode:",
+        "keyword": ".keep_rounds_in_ranks",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "hp_reaction:",
+        "keyword": ".is_under",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_reaction:",
+        "keyword": ".target_allies",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_reaction:",
+        "keyword": ".target_enemies",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "crit:",
+        "keyword": ".is_valid_effects_target",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "additional_effect:",
+        "keyword": ".is_valid_trinket_target",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_backdrop:",
+        "keyword": ".isFlat",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".type",
+        "values": [
+          "melee",
+          "ranged",
+          "move",
+          "teleport"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_continue_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".self_target_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_crit_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".ignore_stealth",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".ignore_guard",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_miss",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_be_riposted",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".ignore_protection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_crit_heal",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".generation_guaranteed",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_user_selected_targets",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_knowledgeable",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_monster_rerank_valid_on_attack",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_presentation_end",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_post_result",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".is_stall_invalidating",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".refresh_after_each_wave",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".ignore_deathsdoor",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".reset_source_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".reset_target_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_display_selection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".hide_performer_health",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".condensed_tooltip_effects",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".condensed_tooltip_stats",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".condensed_tooltip_type",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".nil",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".has_crit_vo",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_display_skill_name",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill:",
+        "keyword": ".can_display_performer_selection_after_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "initiative:",
+        "keyword": ".hide_indicator",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_empty:",
+        "keyword": ".reset_hp",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_empty:",
+        "keyword": ".count_captor_full_damage",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".release_on_death",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".release_on_prisoner_at_deaths_door",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".release_on_prisoner_affliction",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".switch_class_on_death",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".has_prisoner_overlay",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".unique_first_action_sfx",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".reset_hp",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".use_previous_monster_class_hp",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".add_current_hp",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".use_bark_offset",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "life_link:",
+        "keyword": ".does_spawn_loot",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "life_link:",
+        "keyword": ".is_death_class_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".disable_stall_penalty",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".does_count_towards_stall_penalty",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".accelerate_stall_penalty",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_surprise",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_surprised",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".always_surprise",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".always_be_surprised",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_relieve_stress_from_crit",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_relieve_stress_from_killing_blow",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_summon_rank",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".does_count_as_monster_size_for_monster_brain",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".does_count_as_guardable_for_monster_brain",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_missed",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_hit",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".is_valid_friendly_target",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_damaged_directly",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_random_target",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".can_be_guarded",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".remove_on_retreat",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".disabled_act_out_combat_start_turn_types",
+        "values": [
+          "nothing",
+          "bark_stress",
+          "change_pos",
+          "ignore_command",
+          "random_command",
+          "retreat_from_combat",
+          "attack_friendly",
+          "attack_self",
+          "mark_self",
+          "stress_heal_self",
+          "stress_heal_party",
+          "buff_random_party_member",
+          "buff_party",
+          "heal_self",
+          "consume_item"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".use_previous_monster_hp",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".is_valid_on_bleed_dot",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".is_valid_on_blight_dot",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".is_valid_on_crit",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".reset_scale_anim",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".on_change_sfx",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".can_die_from_damage",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".clear_monster_brain_cooldowns",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "life_time:",
+        "keyword": ".does_check_for_loot",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "mash_modifier:",
+        "keyword": ".disable_additional_mash_for_infestation_sequence_on_death",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "wave_spawning:",
+        "keyword": ".prefers_front",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".type",
+        "values": [
+          "melee",
+          "ranged",
+          "move",
+          "teleport"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_continue_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".self_target_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_crit_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".ignore_stealth",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".ignore_guard",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_miss",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_be_riposted",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".ignore_protection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_crit_heal",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".generation_guaranteed",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_user_selected_targets",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_knowledgeable",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_monster_rerank_valid_on_attack",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_presentation_end",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_post_result",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".is_stall_invalidating",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".refresh_after_each_wave",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".ignore_deathsdoor",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".reset_source_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".reset_target_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_display_selection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".hide_performer_health",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".condensed_tooltip_effects",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".condensed_tooltip_stats",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".condensed_tooltip_type",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".nil",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".has_crit_vo",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_display_skill_name",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".can_display_performer_selection_after_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".type",
+        "values": [
+          "melee",
+          "ranged",
+          "move",
+          "teleport"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_continue_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".self_target_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_crit_valid",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".ignore_stealth",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".ignore_guard",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_miss",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_be_riposted",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".ignore_protection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_crit_heal",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".generation_guaranteed",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_user_selected_targets",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_knowledgeable",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_monster_rerank_valid_on_attack",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_presentation_end",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_monster_rerank_valid_on_friendly_post_result",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".is_stall_invalidating",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".refresh_after_each_wave",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".ignore_deathsdoor",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".reset_source_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".reset_target_stance",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_display_selection",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".hide_performer_health",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".condensed_tooltip_effects",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".condensed_tooltip_stats",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".condensed_tooltip_type",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".nil",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".has_crit_vo",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_display_skill_name",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".can_display_performer_selection_after_turn",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "generation:",
+        "keyword": ".is_generation_enabled",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "skill_selection:",
+        "keyword": ".can_select_combat_skills",
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "header": "progression:",
+        "keyword": ".has_caretaker_goals",
+        "values": [
+          "true",
+          "false"
+        ]
+      }
+    ],
+    "singleString32": [
+      {
+        "header": "display_modifier:",
+        "keyword": ".anim_override"
+      },
+      {
+        "header": "mode:",
+        "keyword": ".bark_override_id"
+      },
+      {
+        "header": "shape_shifter:",
+        "keyword": ".monster_class_ids"
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".type"
+      },
+      {
+        "header": "incompatible_party_member:",
+        "keyword": ".id"
+      },
+      {
+        "header": "extra_battle_loot:",
+        "keyword": ".code"
+      },
+      {
+        "header": "extra_curio_loot:",
+        "keyword": ".code"
+      },
+      {
+        "header": "restriction:",
+        "keyword": ".enabled_dlc"
+      }
+    ],
+    "singleString64": [
+      {
+        "header": "riposte_skill:",
+        "keyword": ".id"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".type"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".anim"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".fx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".targfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".targheadfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".targchestfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".misstargfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".misstargheadfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".misstargchestfx"
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".custom_target_anim"
+      },
+      {
+        "header": "health_bar:",
+        "keyword": ".type"
+      },
+      {
+        "header": "commonfx:",
+        "keyword": ".deathfx"
+      },
+      {
+        "header": "commonfx:",
+        "keyword": ".id"
+      },
+      {
+        "header": "battle_backdrop:",
+        "keyword": ".background_name"
+      },
+      {
+        "header": "battle_backdrop:",
+        "keyword": ".animation"
+      },
+      {
+        "header": "wave_background:",
+        "keyword": ".background_name"
+      },
+      {
+        "header": "wave_background:",
+        "keyword": ".animation"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".id"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".type"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".anim"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".fx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".targfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".targheadfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".targchestfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".misstargfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".misstargheadfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".misstargchestfx"
+      },
+      {
+        "header": "skill:",
+        "keyword": ".custom_target_anim"
+      },
+      {
+        "header": "loot:",
+        "keyword": ".code"
+      },
+      {
+        "header": "loot:",
+        "keyword": ".raid_finish_quirk_class_id"
+      },
+      {
+        "header": "tag:",
+        "keyword": ".id"
+      },
+      {
+        "header": "enemy_type:",
+        "keyword": ".id"
+      },
+      {
+        "header": "monster_brain:",
+        "keyword": ".id"
+      },
+      {
+        "header": "captor_empty:",
+        "keyword": ".performing_monster_captor_base_class"
+      },
+      {
+        "header": "captor_empty:",
+        "keyword": ".captor_full_monster_class"
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".captor_empty_monster_class"
+      },
+      {
+        "header": "life_link:",
+        "keyword": ".base_class"
+      },
+      {
+        "header": "life_link:",
+        "keyword": ".class"
+      },
+      {
+        "header": "shared_health:",
+        "keyword": ".id"
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".monster_class_id"
+      },
+      {
+        "header": "death_damage:",
+        "keyword": ".target_base_class_id"
+      },
+      {
+        "header": "battle_stage:",
+        "keyword": ".id"
+      },
+      {
+        "header": "companion:",
+        "keyword": ".monster_class"
+      },
+      {
+        "header": "torch_settings:",
+        "keyword": ".torch_settings_id"
+      },
+      {
+        "header": "tutorial:",
+        "keyword": ".id"
+      },
+      {
+        "header": "colour_grade:",
+        "keyword": ".name"
+      },
+      {
+        "header": "weapon:",
+        "keyword": ".name"
+      },
+      {
+        "header": "weapon:",
+        "keyword": ".icon"
+      },
+      {
+        "header": "armour:",
+        "keyword": ".name"
+      },
+      {
+        "header": "armour:",
+        "keyword": ".icon"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".id"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".icon"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".type"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".anim"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".fx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".targfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".targheadfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".targchestfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".misstargfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".misstargheadfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".misstargchestfx"
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".custom_target_anim"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".id"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".icon"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".type"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".anim"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".fx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".targfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".targheadfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".targchestfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".misstargfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".misstargheadfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".misstargchestfx"
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".custom_target_anim"
+      },
+      {
+        "header": "generation:",
+        "keyword": ".reduce_number_of_cards_in_deck_hero_class_id"
+      },
+      {
+        "header": "generation:",
+        "keyword": ".town_event_dependency"
+      },
+      {
+        "header": "incompatible_party_member:",
+        "keyword": ".hero_tag"
+      },
+      {
+        "header": "extra_stack_limit:",
+        "keyword": ".id"
+      },
+      {
+        "header": "overstressed_modifier:",
+        "keyword": ".id"
+      },
+      {
+        "header": "act_out_display:",
+        "keyword": ".attack_friendly_anim"
+      },
+      {
+        "header": "act_out_display:",
+        "keyword": ".attack_friendly_fx"
+      },
+      {
+        "header": "act_out_display:",
+        "keyword": ".attack_friendly_targchestfx"
+      },
+      {
+        "header": "act_out_display:",
+        "keyword": ".attack_friendly_sfx"
+      },
+      {
+        "header": "mode:",
+        "keyword": ".id"
+      }
+    ],
+    "singleString128": [
+      {
+        "header": "shape_shifter:",
+        "keyword": ".fx_name"
+      }
+    ],
+    "singleString512": [
+      {
+        "header": "mode:",
+        "keyword": ".battle_complete_combat_skill_id"
+      },
+      {
+        "header": "mode:",
+        "keyword": ".affliction_combat_skill_id"
+      }
+    ],
+    "multiStringLengthRules": [
+      {
+        "header": "skill:",
+        "keyword": ".effect",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "skill:",
+        "keyword": ".valid_modes",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill:",
+        "keyword": ".damage_heal_base_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".effect",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".valid_modes",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".damage_heal_base_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".effect",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".valid_modes",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".damage_heal_base_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".effect",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".valid_modes",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".damage_heal_base_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "mode:",
+        "keyword": ".always_guard_actor_base_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "hp_reaction:",
+        "keyword": ".effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "death_reaction:",
+        "keyword": ".effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "crit:",
+        "keyword": ".effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "captor_empty:",
+        "keyword": ".capture_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "captor_full:",
+        "keyword": ".release_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".living_other_enemy_buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "battle_modifier:",
+        "keyword": ".living_hero_buff_instance_ids",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".random_monster_class_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".change_class_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "controller:",
+        "keyword": ".uncontrol_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "companion:",
+        "keyword": ".buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_hit_performer_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_hit_target_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_killed_other_monsters_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_killed_by_hero_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_killed_all_heroes_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "skill_reaction:",
+        "keyword": ".was_killed_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "audio_modifier:",
+        "keyword": ".ambience_parameter_ids",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "spawn:",
+        "keyword": ".effects",
+        "maxArgs": 4,
+        "maxLength": 31
+      },
+      {
+        "header": "spawn:",
+        "keyword": ".wave_effects",
+        "maxArgs": 4,
+        "maxLength": 64
+      },
+      {
+        "header": "deaths_door:",
+        "keyword": ".buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "deaths_door:",
+        "keyword": ".recovery_buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "deaths_door:",
+        "keyword": ".recovery_heart_attack_buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "deaths_door:",
+        "keyword": ".enter_effects",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "last_hero:",
+        "keyword": ".buffs",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "overstressed_modifier:",
+        "keyword": ".override_trait_type_ids",
+        "maxArgs": 8,
+        "maxLength": 64
+      },
+      {
+        "header": "activity_modifier:",
+        "keyword": ".override_valid_activity_ids",
+        "maxArgs": 10,
+        "maxLength": 64
+      },
+      {
+        "header": "quirk_modifier:",
+        "keyword": ".incompatible_class_ids",
+        "maxArgs": 10,
+        "maxLength": 64
+      },
+      {
+        "header": "shape_shifter:",
+        "keyword": ".monster_class_ids",
+        "maxArgs": 4,
+        "maxLength": 32
+      }
+    ],
+    "maxArgumentCountRules": [
+      {
+        "header": "skill:",
+        "keyword": ".heal",
+        "maxArgs": 2
+      },
+      {
+        "header": "skill:",
+        "keyword": ".move",
+        "maxArgs": 2
+      },
+      {
+        "header": "skill:",
+        "keyword": ".rank_damage_modifiers",
+        "maxArgs": 4
+      },
+      {
+        "header": "skill:",
+        "keyword": ".area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "skill:",
+        "keyword": ".target_area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "skill:",
+        "keyword": ".required_performer_hp_range",
+        "maxArgs": 2
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".heal",
+        "maxArgs": 2
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".move",
+        "maxArgs": 2
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".rank_damage_modifiers",
+        "maxArgs": 4
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".target_area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "riposte_skill:",
+        "keyword": ".required_performer_hp_range",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".heal",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".move",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".rank_damage_modifiers",
+        "maxArgs": 4
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".target_area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_skill:",
+        "keyword": ".required_performer_hp_range",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".heal",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".move",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".rank_damage_modifiers",
+        "maxArgs": 4
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".target_area_pos_offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "combat_move_skill:",
+        "keyword": ".required_performer_hp_range",
+        "maxArgs": 2
+      },
+      {
+        "header": "defending_area_pos_offset:",
+        "keyword": ".offset",
+        "maxArgs": 2
+      },
+      {
+        "header": "shape_shifter:",
+        "keyword": ".monster_class_chances",
+        "maxArgs": 4
+      },
+      {
+        "header": "death_class:",
+        "keyword": ".random_monster_class_chances",
+        "maxArgs": 4
+      },
+      {
+        "header": "audio_modifier:",
+        "keyword": ".ambience_parameter_values",
+        "maxArgs": 4
+      },
+      {
+        "header": "weapon:",
+        "keyword": ".dmg",
+        "maxArgs": 2
+      },
+      {
+        "header": "overstressed_modifier:",
+        "keyword": ".override_trait_type_chances",
+        "maxArgs": 8
+      }
+    ]
+  }
+}

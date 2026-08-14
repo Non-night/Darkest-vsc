@@ -1,0 +1,107 @@
+{
+  "scopeName": "source.darkest.info",
+  "name": "Darkest Info",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#header"
+    },
+    {
+      "include": "#known"
+    },
+    {
+      "include": "#dynamic"
+    },
+    {
+      "include": "#invalid"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#booleans"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#unquoted"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.darkest",
+          "match": "//.*$"
+        }
+      ]
+    },
+    "header": {
+      "patterns": [
+        {
+          "name": "keyword.control.header.info.darkest",
+          "match": "^[ \\t]*[A-Za-z0-9_]+:"
+        }
+      ]
+    },
+    "known": {
+      "patterns": [
+        {
+          "name": "keyword.other.info.darkest",
+          "match": "\\.(?:disable_additional_mash_for_infestation_sequence_on_death|is_monster_rerank_valid_on_friendly_presentation_end|is_monster_rerank_valid_on_friendly_post_result|does_count_as_monster_size_for_monster_brain|reduce_number_of_cards_in_deck_hero_class_id|can_display_performer_selection_after_turn|does_count_as_guardable_for_monster_brain|disabled_act_out_combat_start_turn_types|number_of_class_specific_camping_skills|reduce_number_of_cards_in_deck_amount|performing_monster_captor_base_class|can_relieve_stress_from_killing_blow|number_of_selected_combat_skills_max|override_stress_removal_amount_high|condensed_tooltip_effects_per_line|release_on_prisoner_at_deaths_door|override_stress_removal_amount_low|is_monster_rerank_valid_on_attack|always_guard_actor_base_class_ids|was_killed_other_monsters_effects|does_count_towards_stall_penalty|battle_complete_combat_skill_id|number_of_shared_camping_skills|release_on_prisoner_affliction|number_of_random_combat_skills|use_centre_skill_announcement|sort_position_z_rank_override|use_previous_monster_class_hp|living_hero_buff_instance_ids|clear_monster_brain_cooldowns|was_killed_all_heroes_effects|number_of_positive_quirks_min|number_of_positive_quirks_max|number_of_negative_quirks_min|number_of_negative_quirks_max|can_relieve_stress_from_crit|random_monster_class_chances|required_performer_hp_range|recovery_heart_attack_buffs|enter_effect_round_cooldown|override_trait_type_chances|override_valid_activity_ids|attack_friendly_targchestfx|damage_heal_base_class_ids|custom_idle_round_duration|affliction_combat_skill_id|raid_finish_quirk_class_id|captor_empty_monster_class|stress_per_controlled_turn|was_killed_by_hero_effects|disabled_popup_text_types|condensed_tooltip_effects|is_valid_trinket_attacker|number_of_turns_per_round|captor_full_monster_class|monster_class_valid_ranks|carry_over_hp_min_percent|was_hit_performer_effects|ambience_parameter_values|is_user_selected_targets|count_captor_full_damage|accelerate_stall_penalty|is_valid_friendly_target|living_other_enemy_buffs|random_monster_class_ids|can_select_combat_skills|refresh_after_each_wave|condensed_tooltip_stats|is_valid_effects_target|is_valid_trinket_target|per_turn_damage_percent|unique_first_action_sfx|can_be_damaged_directly|use_previous_monster_hp|number_of_cards_in_deck|override_trait_type_ids|target_area_pos_offset|condensed_tooltip_type|can_display_skill_name|stress_damage_per_turn|per_turn_stress_damage|is_valid_on_blight_dot|was_hit_target_effects|ambience_parameter_ids|upgradeRequirementCode|incompatible_class_ids|rank_damage_modifiers|generation_guaranteed|is_stall_invalidating|can_display_selection|hide_performer_health|custom_idle_anim_name|switch_class_on_death|monster_class_chances|disable_stall_penalty|is_valid_on_bleed_dot|heal_per_turn_percent|is_generation_enabled|town_event_dependency|extra_targets_chance|keep_rounds_in_ranks|target_base_class_id|has_prisoner_overlay|is_death_class_valid|can_be_random_target|change_class_effects|attack_friendly_anim|extra_targets_count|reset_source_stance|reset_target_stance|always_be_surprised|can_die_from_damage|does_check_for_loot|has_caretaker_goals|attack_friendly_sfx|custom_target_anim|can_be_summon_rank|was_killed_effects|attack_friendly_fx|starting_cooldown|self_target_valid|ignore_protection|ignore_deathsdoor|death_blow_resist|monster_class_ids|remove_on_retreat|alive_round_limit|uncontrol_effects|torch_settings_id|per_battle_limit|is_continue_turn|is_knowledgeable|bark_override_id|release_on_death|can_be_surprised|monster_class_id|is_valid_on_crit|reset_scale_anim|can_be_riposted|misstargchestfx|area_pos_offset|is_raid_default|background_name|capture_effects|release_effects|use_bark_offset|does_spawn_loot|round_frequency|always_surprise|variation_count|disable_health|per_turn_limit|ignore_stealth|misstargheadfx|target_enemies|disease_resist|hide_indicator|add_current_hp|can_be_guarded|recovery_buffs|disable_halos|anim_override|show_spawn_fx|is_crit_valid|can_crit_heal|is_targetable|target_allies|poison_resist|debuff_resist|target_damage|can_be_missed|on_change_sfx|monster_class|prefers_front|enter_effects|ignore_guard|bleed_resist|can_surprise|wave_effects|valid_modes|targchestfx|has_crit_vo|target_rank|stun_resist|move_resist|trap_resist|card_chance|enabled_dlc|targheadfx|misstargfx|base_class|can_be_hit|death_blow|animation|prefskill|intensity|can_miss|hp_ratio|is_under|reset_hp|hero_tag|effects|deathfx|fx_name|disease|launch|target|effect|targfx|isFlat|offset|poison|debuff|amount|level|count|class|buffs|bleed|index|move|crit|type|heal|icon|anim|size|prot|code|name|stun|trap|dmg|atk|def|nil|spd|min|max|id|fx|hp)\\b"
+        }
+      ]
+    },
+    "dynamic": {
+      "patterns": [
+        {
+          "name": "keyword.other.info.darkest",
+          "match": "\\.[A-Za-z0-9_]+_effects\\b"
+        }
+      ]
+    },
+    "invalid": {
+      "patterns": [
+        {
+          "name": "invalid.illegal.darkest",
+          "match": "\\.[A-Za-z0-9_]+"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.darkest",
+          "match": "\"(?:(?!//)[^\"\\r\\n])*\""
+        }
+      ]
+    },
+    "booleans": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.darkest",
+          "match": "\\b(?:true|false|True|False|TRUE|FALSE)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.darkest",
+          "match": "-?\\b\\d+(?:\\.\\d+)?%?\\b"
+        }
+      ]
+    },
+    "unquoted": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.unquoted.darkest",
+          "match": "\\b(?!(?:true|false|True|False|TRUE|FALSE)\\b)[A-Za-z_][A-Za-z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}

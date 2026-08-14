@@ -1,0 +1,265 @@
+{
+  "name": "darkest-dungeon",
+  "displayName": "Darkest Dungeon",
+  "description": "Darkest Dungeon .darkest 文件的着色、补全、诊断、注释和颜色预览支持。",
+  "version": "3.1.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Non-night/Darkest-vsc.git"
+  },
+  "homepage": "https://github.com/Non-night/Darkest-vsc#readme",
+  "bugs": {
+    "url": "https://github.com/Non-night/Darkest-vsc/issues"
+  },
+  "publisher": "No_night",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Linters"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:darkest-effect",
+    "onLanguage:darkest-info",
+    "onLanguage:darkest-art",
+    "onLanguage:darkest-override",
+    "onLanguage:darkest-colours",
+    "onCommand:darkestDungeon.toggleLineComment",
+    "onCommand:darkestDungeon.refreshDiagnostics"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "darkest-effect",
+        "aliases": [
+          "Darkest Effect",
+          "darkest-effect"
+        ],
+        "extensions": [
+          ".effects.darkest"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "darkest-info",
+        "aliases": [
+          "Darkest Info",
+          "darkest-info"
+        ],
+        "extensions": [
+          ".info.darkest"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "darkest-art",
+        "aliases": [
+          "Darkest Art",
+          "darkest-art"
+        ],
+        "extensions": [
+          ".art.darkest"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "darkest-override",
+        "aliases": [
+          "Darkest Override",
+          "darkest-override"
+        ],
+        "extensions": [
+          ".override.darkest"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "darkest-colours",
+        "aliases": [
+          "Darkest Colours",
+          "darkest-colours"
+        ],
+        "extensions": [
+          ".colours.darkest"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "darkest-effect",
+        "scopeName": "source.darkest.effect",
+        "path": "./syntaxes/darkest-effect.tmLanguage.json"
+      },
+      {
+        "language": "darkest-info",
+        "scopeName": "source.darkest.info",
+        "path": "./syntaxes/darkest-info.tmLanguage.json"
+      },
+      {
+        "language": "darkest-art",
+        "scopeName": "source.darkest.art",
+        "path": "./syntaxes/darkest-art.tmLanguage.json"
+      },
+      {
+        "language": "darkest-override",
+        "scopeName": "source.darkest.override",
+        "path": "./syntaxes/darkest-override.tmLanguage.json"
+      },
+      {
+        "language": "darkest-colours",
+        "scopeName": "source.darkest.colours",
+        "path": "./syntaxes/darkest-colours.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "darkestDungeon.toggleLineComment",
+        "title": "Darkest Dungeon: 切换行注释"
+      },
+      {
+        "command": "darkestDungeon.refreshDiagnostics",
+        "title": "Darkest Dungeon: 刷新诊断"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "darkestDungeon.toggleLineComment",
+        "key": "ctrl+/",
+        "mac": "cmd+/",
+        "when": "editorTextFocus && (editorLangId == darkest-effect || editorLangId == darkest-info || editorLangId == darkest-art || editorLangId == darkest-override || editorLangId == darkest-colours)"
+      }
+    ],
+    "configuration": {
+      "title": "Darkest Dungeon",
+      "properties": {
+        "darkestDungeon.enableCtrlSlashToggleComment": {
+          "type": "boolean",
+          "default": true,
+          "description": "启用 Darkest Dungeon 文件中的 Ctrl+/ 批量注释切换。"
+        },
+        "darkestDungeon.colours.enableAutomaticColorPreview": {
+          "type": "boolean",
+          "default": true,
+          "description": "在 .colours.darkest 的 .rgba 参数旁显示颜色预览。"
+        },
+        "darkestDungeon.colours.enableColorPickerOnClick": {
+          "type": "boolean",
+          "default": true,
+          "description": "允许通过颜色预览打开 VS Code 原生颜色选择器并写回 #RRGGBB。"
+        }
+      }
+    },
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "keyword.control.header.darkest",
+            "settings": {
+              "foreground": "#4682B4",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": "keyword.control.core.darkest",
+            "settings": {
+              "foreground": "#FFC0CB",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": "variable.parameter.prop.darkest",
+            "settings": {
+              "foreground": "#B8B6AC"
+            }
+          },
+          {
+            "scope": "keyword.other.bleed.darkest",
+            "settings": {
+              "foreground": "#B10000"
+            }
+          },
+          {
+            "scope": "keyword.other.poison.darkest",
+            "settings": {
+              "foreground": "#BDC241"
+            }
+          },
+          {
+            "scope": "keyword.other.heal.darkest",
+            "settings": {
+              "foreground": "#87C241"
+            }
+          },
+          {
+            "scope": "keyword.other.stun.darkest",
+            "settings": {
+              "foreground": "#C99C45"
+            }
+          },
+          {
+            "scope": "keyword.other.kill.darkest",
+            "settings": {
+              "foreground": "#FF0000"
+            }
+          },
+          {
+            "scope": "keyword.other.riposte.darkest",
+            "settings": {
+              "foreground": "#C3630F"
+            }
+          },
+          {
+            "scope": "keyword.other.buff.darkest",
+            "settings": {
+              "foreground": "#5EC9D6"
+            }
+          },
+          {
+            "scope": "keyword.other.summon.darkest",
+            "settings": {
+              "foreground": "#7FFFD4"
+            }
+          },
+          {
+            "scope": "constant.numeric.darkest",
+            "settings": {
+              "foreground": "#FF8C00"
+            }
+          },
+          {
+            "scope": "entity.name.tag.unquoted.darkest",
+            "settings": {
+              "foreground": "#87CEFA"
+            }
+          },
+          {
+            "scope": "keyword.control.header.info.darkest",
+            "settings": {
+              "foreground": "#4682B4",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": "keyword.other.info.darkest",
+            "settings": {
+              "foreground": "#244BA5"
+            }
+          },
+          {
+            "scope": "invalid.illegal.darkest",
+            "settings": {
+              "foreground": "#FFFF00"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  }
+}

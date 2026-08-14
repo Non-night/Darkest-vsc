@@ -1,0 +1,10 @@
+node_modules/
+.vscode-test/
+.port-tools/
+.npm-cache/
+.pack-cache/
+*.vsix
+*.tgz
+npm-debug.log*
+.DS_Store
+Thumbs.db

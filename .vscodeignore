@@ -1,0 +1,6 @@
+.port-tools/**
+.npm-cache/**
+.pack-cache/**
+test/**
+For_the_Darkest_Dungeon_功能说明.md
+*.tgz

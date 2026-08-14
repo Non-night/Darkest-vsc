@@ -1,0 +1,96 @@
+{
+  "scopeName": "source.darkest.colours",
+  "name": "Darkest Colours",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#header"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#hex"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#booleans"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#unquoted"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.darkest",
+          "match": "//.*$"
+        }
+      ]
+    },
+    "header": {
+      "patterns": [
+        {
+          "name": "keyword.control.header.info.darkest",
+          "match": "^[ \\t]*colour:"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.info.darkest",
+          "match": "\\.[A-Za-z0-9_]+"
+        }
+      ]
+    },
+    "hex": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.unquoted.darkest",
+          "match": "#(?:[0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.darkest",
+          "match": "\"(?:(?!//)[^\"\\r\\n])*\""
+        }
+      ]
+    },
+    "booleans": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.darkest",
+          "match": "\\b(?:true|false|True|False|TRUE|FALSE)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.darkest",
+          "match": "-?\\b\\d+(?:\\.\\d+)?%?\\b"
+        }
+      ]
+    },
+    "unquoted": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.unquoted.darkest",
+          "match": "\\b(?!(?:colour|true|false|True|False|TRUE|FALSE)\\b)[A-Za-z_][A-Za-z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "scopeName": "source.darkest.effect",
+  "name": "Darkest Effect",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#header"
+    },
+    {
+      "include": "#special"
+    },
+    {
+      "include": "#core"
+    },
+    {
+      "include": "#valid"
+    },
+    {
+      "include": "#invalid"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#booleans"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#unquoted"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.darkest",
+          "match": "//.*$"
+        }
+      ]
+    },
+    "header": {
+      "patterns": [
+        {
+          "name": "keyword.control.header.darkest",
+          "match": "effect:"
+        }
+      ]
+    },
+    "special": {
+      "patterns": [
+        {
+          "name": "keyword.other.bleed.darkest",
+          "match": "\\.dotBleed\\b"
+        },
+        {
+          "name": "keyword.other.poison.darkest",
+          "match": "\\.dotPoison\\b"
+        },
+        {
+          "name": "keyword.other.heal.darkest",
+          "match": "\\.(?:dotHpHeal|heal|heal_percent)\\b"
+        },
+        {
+          "name": "keyword.other.stun.darkest",
+          "match": "\\.stun\\b"
+        },
+        {
+          "name": "keyword.other.kill.darkest",
+          "match": "\\.(?:kill|kill_enemy_types)\\b"
+        },
+        {
+          "name": "keyword.other.riposte.darkest",
+          "match": "\\.(?:riposte_on_miss_chance_multiply|riposte_on_hit_chance_multiply|riposte_on_miss_chance_add|riposte_on_hit_chance_add|riposte_effect|riposte)\\b"
+        },
+        {
+          "name": "keyword.other.buff.darkest",
+          "match": "\\.(?:buff_is_clear_debuff_valid|protection_rating_multiply|defense_rating_multiply|attack_rating_multiply|protection_rating_add|speed_rating_multiply|damage_high_multiply|crit_chance_multiply|damage_low_multiply|buff_duration_type|defense_rating_add|attack_rating_add|combat_stat_buff|buff_source_type|speed_rating_add|damage_high_add|max_hp_multiply|crit_chance_add|damage_low_add|buff_sub_type|buff_amount|max_hp_add|buff_type|buff_ids|guard)\\b"
+        },
+        {
+          "name": "keyword.other.summon.darkest",
+          "match": "\\.(?:summon_rank_is_previous_monster_class|summon_does_roll_initiatives|summon_erase_data_on_roll|summon_can_spawn_loot|summon_monsters|summon_chances|summon_limits|summon_ranks|summon_count)\\b"
+        }
+      ]
+    },
+    "core": {
+      "patterns": [
+        {
+          "name": "keyword.control.core.darkest",
+          "match": "\\.(?:on_miss|target|on_hit|name)\\b"
+        }
+      ]
+    },
+    "valid": {
+      "patterns": [
+        {
+          "name": "variable.parameter.prop.darkest",
+          "match": "\\.(?:set_monster_class_clear_monster_brain_cooldowns|set_monster_class_carry_over_hp_min_percent|summon_rank_is_previous_monster_class|set_monster_class_clear_initative|spawn_target_actor_base_class_id|riposte_on_miss_chance_multiply|riposte_on_hit_chance_multiply|set_monster_class_reset_buffs|set_monster_class_reset_scale|individual_target_actor_rolls|summon_does_roll_initiatives|affliction_blockable_chance|protection_rating_multiply|riposte_on_miss_chance_add|set_monster_class_reset_hp|buff_is_clear_debuff_valid|riposte_on_hit_chance_add|capture_remove_from_party|summon_erase_data_on_roll|crit_doesnt_apply_to_roll|set_monster_class_chances|skips_endless_wave_curio|defense_rating_multiply|virtue_blockable_chance|attack_rating_multiply|steal_buff_source_type|swap_source_and_target|protection_rating_add|speed_rating_multiply|summon_can_spawn_loot|performer_rank_target|set_monster_class_ids|damage_high_multiply|crit_chance_multiply|steal_buff_stat_type|set_monster_class_id|health_damage_blocks|refreshes_skill_uses|damage_low_multiply|defense_rating_add|buff_duration_type|can_apply_on_death|damage_source_type|damage_source_data|curio_result_type|attack_rating_add|clear_rank_target|apply_with_result|initiative_change|combat_stat_buff|speed_rating_add|kill_enemy_types|source_heal_type|buff_source_type|riposte_validate|damage_high_add|max_hp_multiply|crit_chance_add|instant_shuffle|summon_monsters|has_description|damage_low_add|clearDotStress|riposte_effect|torch_decrease|torch_increase|remove_vampire|summon_chances|can_crit_heal|clear_riposte|clearguarding|shuffletarget|buff_sub_type|summon_limits|skill_instant|health_damage|use_item_type|heal_percent|clearguarded|shuffleparty|unimmobilize|summon_ranks|summon_count|clear_debuff|cure_disease|cure_poison|buff_amount|monsterType|rank_target|use_item_id|clearvirtue|damage_type|healstress|max_hp_add|cure_bleed|dotShuffle|immobilize|apply_once|dotPoison|dotStress|dotHpHeal|keyStatus|buff_type|uncontrol|actor_dot|unstealth|dotSource|dotBleed|buff_ids|duration|set_mode|on_miss|riposte|control|capture|disease|stealth|target|chance|on_hit|stress|unstun|undaze|queue|untag|guard|curio|name|heal|cure|stun|item|push|pull|kill|bark|daze|tag)\\b"
+        }
+      ]
+    },
+    "invalid": {
+      "patterns": [
+        {
+          "name": "invalid.illegal.darkest",
+          "match": "\\.[A-Za-z_]+"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.darkest",
+          "match": "\"(?:(?!//)[^\"\\r\\n])*\""
+        }
+      ]
+    },
+    "booleans": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.darkest",
+          "match": "\\b(?:true|false|True|False|TRUE|FALSE)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.darkest",
+          "match": "-?\\b\\d+(?:\\.\\d+)?%?\\b"
+        }
+      ]
+    },
+    "unquoted": {
+      "patterns": [
+        {
+          "name": "entity.name.tag.unquoted.darkest",
+          "match": "\\b(?!(?:effect|true|false|True|False|TRUE|FALSE)\\b)[A-Za-z_][A-Za-z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}
